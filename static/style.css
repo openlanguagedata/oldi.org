@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+:root {
+    --blue: #0F52BA;
+    --bluevar: #0F52BAF2;
+    --blueshadow: #597DB6;
+    --lightgrey: hsla(0, 0%, 94%, 1);
+    --grey: hsla(0, 0%, 92%, 1);
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(15px + 0.2vw)/calc(1.1em + 0.2vw);
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    max-width: min(100%, 50em);
+    padding: 1em;
+}
+
+header {
+    width: 100%;
+    padding: 25px 5px;
+    margin: 0;
+    text-align: center;
+    background-image: repeating-linear-gradient(45deg, var(--blue) 0px 15px, var(--bluevar) 15px 30px);
+    color: white;
+    box-shadow: 0 0 8px 1px var(--blueshadow);
+
+    > a {
+        text-decoration: none;
+        h1 {
+            color: white;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+    nav {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline;
+                margin: 0 10px;
+                background-color: white;
+                border-radius: 5px;
+                padding: 5px;
+                a {
+                    font-weight: bold;
+                    color: var(--blue);
+                    text-decoration: none;
+                }
+                a:hover { filter: opacity(75%); }
+            }
+        }
+    }
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto
+}
+
+img.i { height: 2ex; vertical-align: middle; }
+
+a { color: var(--blue);  }
+a:hover { text-decoration: none; }
+th a { color: black; }
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul.none { list-style-type: none; padding-left: 10px; }
+ul.checklist { list-style-type: none; }
+ul.checklist li { text-indent: -25px; margin-left: 10px; }
+
+dt { text-decoration: underline; margin: 10px 0; }
+dd { margin: 10px 0 10px 1em; }
+
+ol li ol li { list-style-type: lower-latin; }
+
+table {
+    border-spacing: 0;
+    border-collapse: separate;
+    border-bottom: 2px solid black;
+    vertical-align: middle;
+}
+
+table thead tr {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+table thead tr:first-of-type th {
+    border-top: 2px solid black;
+}
+
+table thead tr:last-of-type th {
+    border-bottom: 1px solid black;
+}
+
+table td, table th { padding: 2px 8px; }
+
+table tbody td { background-color: white; }
+
+table tbody tr:nth-child(odd) { filter: brightness(95%); }
+
+table.c { text-align: center; }
+table.l1 td:nth-last-of-type(1) { text-align: left; }
+table.l2 td:nth-last-of-type(2) { text-align: left; }
+table.l3 td:nth-last-of-type(3) { text-align: left; }
+table.l4 td:nth-last-of-type(4) { text-align: left; }
+
+span[data-status] { display: inline-block; min-width: 35px; }
+[data-status] { padding: 2px 8px; text-align: center; }
+[data-status="ok"] { background-color: lightgreen; }
+[data-status="warn"] { background-color: yellow; }
+[data-status="no"] { background-color: salmon; }
+
+table.progress {
+    margin: 1em;
+    background-image: repeating-linear-gradient(45deg, var(--grey) 0px 15px, var(--lightgrey) 15px 30px);
+    border: 2px solid var(--grey);
+    border-radius: 20px;
+    border-spacing: 3px;
+}
+table.progress td {
+    height: 30px;
+    border-radius: 20px;
+    padding: 0 15px;
+    background-color: transparent;
+}
+
+table.progress tr > td:first-child {
+    background-image: repeating-linear-gradient(45deg, var(--blue) 0px 15px, var(--bluevar) 15px 30px);
+    border: 2px solid var(--grey);
+}
+
+div.box {
+    margin: 1em auto;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: var(--grey);
+}
+
+div.code {
+    white-space: pre-line;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.code em { opacity: 0.5; }

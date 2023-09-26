@@ -1,0 +1,62 @@
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta property="og:site_name" content="{% block title %}OLDI – Open Language Data Initiative{% endblock %}">
+        <meta property="og:description" content="The Open Language Data Initiative (OLDI) empowers language communities around the globe to contribute to a database that drives the foundation of today’s machine translation and natural language processing work. We invite community, academic, and industry members to contribute to key datasets that are imperative to the organic expansion of language technology’s reach.">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <title>{{ self.title() }}</title>
+    </head>
+    <body>
+        <header>
+            <a href="/"><h1>Open Language Data Initiative</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/values.html">Values</a></li>
+                    <li><a href="/languages.html">Languages</a></li>
+                    <li><a href="/guidelines.html">Guidelines</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+            <h1>Welcome!</h1>
+
+            <p>The Open Language Data Initiative (OLDI) empowers language communities around the globe to contribute to a database that drives the foundation of today’s machine translation and natural language processing work. We invite community, academic, and industry members to contribute to key datasets that are imperative to the organic expansion of language technology’s reach.</p>
+
+            <h2>Why do we exist?</h2>
+
+            <p>Machine translation research has advanced at breakneck speed. That said, progress made in translation quality has largely been directed at high-resource languages, leaving many languages behind. More recently, focus has started to shift to under-served languages (also called low-resource), and foundational datasets such as <a href="https://aclanthology.org/2022.tacl-1.30/">FLORES</a>, <a href="https://aclanthology.org/2023.acl-long.154/">NLLB-Seed</a> and <a href="https://aclanthology.org/2022.sumeval-1.4/">NTREX</a> have made it easier to develop and evaluate language technologies for an increasing number of languages. The high impact of these components left some in the research community wondering: how do we add more languages to these existing open-source datasets?</p>
+
+            <p>OLDI was established for this very purpose. Because of the centrality of these components to the development of machine translation systems, allowing community, academic and industry members to contribute to them directly ensures the organic growth of these foundational corpora. The data made available can help researchers and developers improve translation coverage and quality, build stronger models, and edge us closer to materialization of the “<a href="https://ethanzuckerman.com/the-polyglot-internet/">The Polyglot Internet</a>”.</p>
+
+            <div class="box">
+                Contributions are most welcome!<br>
+                See the <a href="/guidelines.html">Contribution Guidelines</a>.
+            </div>
+
+            <div class="box">
+                See the list of <a href="/languages.html">Supported Languages</a>.
+            </div>
+
+            <h2 id="datasets">OLDI datasets</h2>
+
+            <p>OLDI currently houses the following datasets:</p>
+            <ul>
+                <li>🌱 <a href="https://github.com/openlanguagedata/seed">Seed data</a>, a set of 6,193 sentences extracted from English Wikipedia and translated into many other languages, which can be used to train machine translation models.</li>
+                <li>💐 <a href="https://github.com/openlanguagedata/flores">FLORES+</a>, an evaluation benchmark for multilingual machine translation based on FLORES, covering over 200 languages.</li>
+            </ul>
+
+            <h2>Organizers</h2>
+            <ul class="none">
+                <li>Antonios Anastasopoulos, George Mason University</li>
+                <li>Laurie Burchell, University of Edinburgh</li>
+                <li>Jean Maillard, FAIR, Meta</li>
+                <li>Philipp Koehn, Johns Hopkins University</li>
+                <li>Skyler Wang, UC Berkley, FAIR, Meta</li>
+            </ul>
+            {% endblock %}
+        </main>
+    </body>
+</html>
