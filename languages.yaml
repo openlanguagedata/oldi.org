@@ -1,933 +1,1095 @@
 ace_Arab:
-  name: Acehnese (Arabic script)
-  glottocode: achi1257
+  display_name: Acehnese (Arabic script)
+  eng_name: Acehnese
+  endonym: بهسا اچيه
   iso_639_3: ace
   iso_15924: Arab
+  glottocode: achi1257
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 ace_Latn:
-  name: Acehnese (Latin script)
-  glottocode: achi1257
+  display_name: Acehnese (Latin script)
+  eng_name: Acehnese
+  endonym: bahsa Acèh
   iso_639_3: ace
   iso_15924: Latn
+  glottocode: achi1257
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 acm_Arab:
-  name: Mesopotamian Arabic
-  glottocode: meso1252
+  display_name: Mesopotamian Arabic
+  eng_name: Mesopotamian Arabic
+  endonym: لهجة بلاد ما بين النهرين
   iso_639_3: acm
   iso_15924: Arab
+  glottocode: meso1252
   datasets:
     flores_dev: ok
     flores_devtest: ok
 acq_Arab:
-  name: Ta’izzi-Adeni Arabic
-  glottocode: taiz1242
+  display_name: Taʽizzi-Adeni Arabic
+  eng_name: Taʽizzi-Adeni Arabic
+  endonym: لهجة تعزية عدنية
   iso_639_3: acq
   iso_15924: Arab
+  glottocode: taiz1242
   datasets:
     flores_dev: ok
     flores_devtest: ok
 aeb_Arab:
-  name: Tunisian Arabic
-  glottocode: tuni1259
+  display_name: Tunisian Arabic
+  eng_name: Tunisian Arabic
+  endonym: تونسي
   iso_639_3: aeb
   iso_15924: Arab
+  glottocode: tuni1259
   datasets:
     flores_dev: ok
     flores_devtest: ok
 afr_Latn:
-  name: Afrikaans
-  glottocode: afri1274
+  display_name: Afrikaans
+  eng_name: Afrikaans
   iso_639_3: afr
   iso_15924: Latn
+  glottocode: afri1274
   datasets:
     flores_dev: ok
     flores_devtest: ok
 als_Latn:
-  name: Tosk Albanian
-  glottocode: tosk1239
+  display_name: Albanian (Tosk)
+  eng_name: Tosk Albanian
+  endonym: toskërishtja
   iso_639_3: als
   iso_15924: Latn
+  glottocode: tosk1239
   datasets:
     flores_dev: ok
     flores_devtest: ok
 amh_Ethi:
-  name: Amharic
-  glottocode: amha1245
+  display_name: Amharic
+  eng_name: Amharic
+  endonym: አማርኛ
   iso_639_3: amh
   iso_15924: Ethi
+  glottocode: amha1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 apc_Arab_nort3139:
-  name: North Levantine Arabic
-  glottocode: nort3139
+  display_name: Levantine Arabic (North)
+  eng_name: North Levantine Arabic
+  endonym: اللهجة الشامية الشمالية
   iso_639_3: apc
   iso_15924: Arab
+  glottocode: nort3139
   datasets:
     flores_dev: ok
     flores_devtest: ok
 apc_Arab_sout3123:
-  name: South Levantine Arabic
-  glottocode: sout3123
+  display_name: Levantine Arabic (South)
+  eng_name: South Levantine Arabic
+  endonym: اللهجة الشامية الجنوبية
   iso_639_3: apc
   iso_15924: Arab
+  glottocode: sout3123
   datasets:
     flores_dev: ok
     flores_devtest: ok
 arb_Arab:
-  name: Modern Standard Arabic
-  glottocode: stan1318
+  display_name: Modern Standard Arabic
+  eng_name: Modern Standard Arabic
+  endonym: العربية الفصحى
   iso_639_3: arb
   iso_15924: Arab
+  glottocode: stan1318
   datasets:
     flores_dev: ok
     flores_devtest: ok
 arb_Latn:
-  name: Modern Standard Arabic (Romanized)
-  glottocode: stan1318
+  display_name: Modern Standard Arabic (Romanized)
+  eng_name: Modern Standard Arabic
+  endonym: al-ʻArabīyah al-Fuṣḥā
   iso_639_3: arb
   iso_15924: Latn
+  glottocode: stan1318
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ars_Arab:
-  name: Najdi Arabic
-  glottocode: najd1235
+  display_name: Najdi Arabic
+  eng_name: Najdi Arabic
+  endonym: اللهجة النجدية
   iso_639_3: ars
   iso_15924: Arab
+  glottocode: najd1235
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ary_Arab:
-  name: Moroccan Arabic
-  glottocode: moro1292
+  display_name: Moroccan Arabic
+  eng_name: Moroccan Arabic
+  endonym:
+  - الدارجة
+  - الداريجة
   iso_639_3: ary
   iso_15924: Arab
+  glottocode: moro1292
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 arz_Arab:
-  name: Egyptian Arabic
-  glottocode: egyp1253
+  display_name: Egyptian Arabic
+  eng_name: Egyptian Arabic
+  endonym: مَصرى
   iso_639_3: arz
   iso_15924: Arab
+  glottocode: egyp1253
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 asm_Beng:
-  name: Assamese
-  glottocode: assa1263
+  display_name: Assamese
+  eng_name: Assamese
   iso_639_3: asm
   iso_15924: Beng
+  glottocode: assa1263
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ast_Latn:
-  name: Asturian
-  glottocode: astu1245
+  display_name: Asturian
+  eng_name: Asturian
   iso_639_3: ast
   iso_15924: Latn
+  glottocode: astu1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 awa_Deva:
-  name: Awadhi
-  glottocode: awad1243
+  display_name: Awadhi
+  eng_name: Awadhi
   iso_639_3: awa
   iso_15924: Deva
+  glottocode: awad1243
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ayr_Latn:
-  name: Central Aymara
-  glottocode: cent2142
+  display_name: Central Aymara
+  eng_name: Central Aymara
   iso_639_3: ayr
   iso_15924: Latn
+  glottocode: cent2142
   datasets:
     flores_dev: ok
     flores_devtest: ok
 azb_Arab:
-  name: South Azerbaijani
-  glottocode: sout2697
+  display_name: South Azerbaijani
+  eng_name: South Azerbaijani
   iso_639_3: azb
   iso_15924: Arab
+  glottocode: sout2697
   datasets:
     flores_dev: ok
     flores_devtest: ok
 azj_Latn:
-  name: North Azerbaijani
-  glottocode: nort2697
+  display_name: North Azerbaijani
+  eng_name: North Azerbaijani
   iso_639_3: azj
   iso_15924: Latn
+  glottocode: nort2697
   datasets:
     flores_dev: ok
     flores_devtest: ok
 bak_Cyrl:
-  name: Bashkir
-  glottocode: bash1264
+  display_name: Bashkir
+  eng_name: Bashkir
   iso_639_3: bak
   iso_15924: Cyrl
+  glottocode: bash1264
   datasets:
     flores_dev: ok
     flores_devtest: ok
 bam_Latn:
-  name: Bambara
-  glottocode: bamb1269
+  display_name: Bambara
+  eng_name: Bambara
   iso_639_3: bam
   iso_15924: Latn
+  glottocode: bamb1269
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 ban_Latn:
-  name: Balinese
-  glottocode: bali1278
+  display_name: Balinese
+  eng_name: Balinese
   iso_639_3: ban
   iso_15924: Latn
+  glottocode: bali1278
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 bel_Cyrl:
-  name: Belarusian
-  glottocode: bela1254
+  display_name: Belarusian
+  eng_name: Belarusian
   iso_639_3: bel
   iso_15924: Cyrl
+  glottocode: bela1254
   datasets:
     flores_dev: ok
     flores_devtest: ok
 bem_Latn:
-  name: Bemba
-  glottocode: bemb1257
+  display_name: Bemba
+  eng_name: Bemba
   iso_639_3: bem
   iso_15924: Latn
+  glottocode: bemb1257
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ben_Beng:
-  name: Bengali
-  glottocode: beng1280
+  display_name: Bengali
+  eng_name:
+  - Bengali
+  - Bangla
+  endonym: বাংলা
   iso_639_3: ben
   iso_15924: Beng
+  glottocode: beng1280
   datasets:
     flores_dev: ok
     flores_devtest: ok
 bho_Deva:
-  name: Bhojpuri
-  glottocode: bhoj1244
+  display_name: Bhojpuri
+  eng_name: Bhojpuri
+  endonym: भोजपुरी
   iso_639_3: bho
   iso_15924: Deva
+  glottocode: bhoj1244
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 bjn_Arab:
-  name: Banjar (Arabic script)
-  glottocode: banj1239
+  display_name: Banjar (Jawi script)
+  eng_name:
+  - Banjar
+  - Banjarese
+  endonym: باس بنجر
   iso_639_3: bjn
   iso_15924: Arab
+  glottocode: banj1239
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 bjn_Latn:
-  name: Banjar (Latin script)
-  glottocode: banj1239
+  display_name: Banjar (Latin script)
+  eng_name:
+  - Banjar
+  - Banjarese
+  endonym: basa Banjar
   iso_639_3: bjn
   iso_15924: Latn
+  glottocode: banj1239
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 bod_Tibt:
-  name: Standard Tibetan
-  glottocode: tibe1272
+  display_name: Lhasa Tibetan
+  eng_name: Lhasa Tibetan
+  endonym:
+  - ལྷ་སའི་སྐད་
   iso_639_3: bod
   iso_15924: Tibt
+  glottocode: utsa1239
   datasets:
     flores_dev: ok
     flores_devtest: ok
 bos_Latn:
-  name: Bosnian
-  glottocode: bosn1245
+  display_name: Bosnian
+  eng_name: Bosnian
   iso_639_3: bos
   iso_15924: Latn
+  glottocode: bosn1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 brx_Deva:
-  name: Bodo
-  glottocode: bodo1269
+  display_name: Bodo
+  eng_name: Bodo
   iso_639_3: brx
   iso_15924: Deva
+  glottocode: bodo1269
   datasets:
     flores_dev: ok
 bug_Latn:
-  name: Buginese
-  glottocode: bugi1244
+  display_name: Buginese
+  eng_name: Buginese
   iso_639_3: bug
   iso_15924: Latn
+  glottocode: bugi1244
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 bul_Cyrl:
-  name: Bulgarian
-  glottocode: bulg1262
+  display_name: Bulgarian
+  eng_name: Bulgarian
   iso_639_3: bul
   iso_15924: Cyrl
+  glottocode: bulg1262
   datasets:
     flores_dev: ok
     flores_devtest: ok
 cat_Latn:
-  name: Catalan
-  glottocode: stan1289
+  display_name: Catalan
+  eng_name: Catalan
   iso_639_3: cat
   iso_15924: Latn
+  glottocode: stan1289
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ceb_Latn:
-  name: Cebuano
-  glottocode: cebu1242
+  display_name: Cebuano
+  eng_name: Cebuano
   iso_639_3: ceb
   iso_15924: Latn
+  glottocode: cebu1242
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ces_Latn:
-  name: Czech
-  glottocode: czec1258
+  display_name: Czech
+  eng_name: Czech
   iso_639_3: ces
   iso_15924: Latn
+  glottocode: czec1258
   datasets:
     flores_dev: ok
     flores_devtest: ok
 chv_Cyrl:
-  name: Chuvash
-  glottocode: chuv1255
+  display_name: Chuvash
+  eng_name: Chuvash
+  endonym:
+  - Чӑваш
+  - Чувашский
   iso_639_3: chv
   iso_15924: Cyrl
+  glottocode: chuv1255
   datasets:
     flores_dev: ok
 cjk_Latn:
-  name: Chokwe
-  glottocode: chok1245
+  display_name: Chokwe
+  eng_name: Chokwe
   iso_639_3: cjk
   iso_15924: Latn
+  glottocode: chok1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ckb_Arab:
-  name: Central Kurdish
-  glottocode: cent1972
+  display_name: Central Kurdish
+  eng_name: Central Kurdish
   iso_639_3: ckb
   iso_15924: Arab
+  glottocode: cent1972
   datasets:
     flores_dev: ok
     flores_devtest: ok
 cmn_Hans:
-  name: Mandarin Chinese (Simplified)
-  glottocode: mand1415
+  display_name: Mandarin Chinese (Standard Beijing)
+  eng_name: Standard Beijing Mandarin
+  endonym: 官话
   iso_639_3: cmn
   iso_15924: Hans
+  glottocode: beij1234
   datasets:
     flores_dev: ok
     flores_devtest: ok
 cmn_Hant:
-  name: Mandarin Chinese (Traditional)
-  glottocode: mand1415
+  display_name: Mandarin Chinese (Taiwanese)
+  eng_name: Taiwanese Mandarin
+  endonym: 官話
   iso_639_3: cmn
   iso_15924: Hant
+  glottocode: taib1240
   datasets:
     flores_dev: ok
     flores_devtest: ok
 crh_Latn:
-  name: Crimean Tatar
-  glottocode: crim1257
+  display_name: Crimean Tatar
+  eng_name: Crimean Tatar
   iso_639_3: crh
   iso_15924: Latn
+  glottocode: crim1257
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 cym_Latn:
-  name: Welsh
-  glottocode: wels1247
+  display_name: Welsh
+  eng_name: Welsh
   iso_639_3: cym
   iso_15924: Latn
+  glottocode: wels1247
   datasets:
     flores_dev: ok
     flores_devtest: ok
 dan_Latn:
-  name: Danish
-  glottocode: dani1285
+  display_name: Danish
+  eng_name: Danish
   iso_639_3: dan
   iso_15924: Latn
+  glottocode: dani1285
   datasets:
     flores_dev: ok
     flores_devtest: ok
 deu_Latn:
-  name: German
-  glottocode: stan1295
+  display_name: German
+  eng_name: German
   iso_639_3: deu
   iso_15924: Latn
+  glottocode: stan1295
   datasets:
     flores_dev: ok
     flores_devtest: ok
 dgo_Deva:
-  name: Dogri
-  glottocode: dogr1250
+  display_name: Dogri
+  eng_name: Dogri
   iso_639_3: dgo
   iso_15924: Deva
+  glottocode: dogr1250
   datasets:
     flores_dev: ok
 dik_Latn:
-  name: Southwestern Dinka
-  glottocode: sout2832
+  display_name: Southwestern Dinka
+  eng_name: Southwestern Dinka
   iso_639_3: dik
   iso_15924: Latn
+  glottocode: sout2832
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 dyu_Latn:
-  name: Dyula
-  glottocode: dyul1238
+  display_name: Dyula
+  eng_name:
+  - Dyula
+  - Jula
+  - Dioula
+  endonym: Julakan
   iso_639_3: dyu
   iso_15924: Latn
+  glottocode: dyul1238
   datasets:
     flores_dev: ok
     flores_devtest: ok
 dzo_Tibt:
-  name: Dzongkha
-  glottocode: dzon1239
+  display_name: Dzongkha
+  eng_name: Dzongkha
+  endonym: རྫོང་ཁ་
   iso_639_3: dzo
   iso_15924: Tibt
+  glottocode: dzon1239
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 ekk_Latn:
-  name: Estonian
-  glottocode: kesk1234
+  display_name: Estonian
+  eng_name: Estonian
+  endonym: eesti keel
   iso_639_3: ekk
   iso_15924: Latn
+  glottocode: esto1258
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ell_Grek:
-  name: Greek
-  glottocode: mode1248
+  display_name: Greek
+  eng_name: Greek
   iso_639_3: ell
   iso_15924: Grek
+  glottocode: mode1248
   datasets:
     flores_dev: ok
     flores_devtest: ok
 eng_Latn:
-  name: English
-  glottocode: stan1293
+  display_name: English
+  eng_name: English
   iso_639_3: eng
   iso_15924: Latn
+  glottocode: stan1293
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 epo_Latn:
-  name: Esperanto
-  glottocode: espe1235
+  display_name: Esperanto
+  eng_name: Esperanto
   iso_639_3: epo
   iso_15924: Latn
+  glottocode: espe1235
   datasets:
     flores_dev: ok
     flores_devtest: ok
 eus_Latn:
-  name: Basque
-  glottocode: basq1248
+  display_name: Basque
+  eng_name: Basque
   iso_639_3: eus
   iso_15924: Latn
+  glottocode: basq1248
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ewe_Latn:
-  name: Ewe
-  glottocode: ewee1241
+  display_name: Ewe
+  eng_name: Ewe
   iso_639_3: ewe
   iso_15924: Latn
+  glottocode: ewee1241
   datasets:
     flores_dev: ok
     flores_devtest: ok
 fao_Latn:
-  name: Faroese
-  glottocode: faro1244
+  display_name: Faroese
+  eng_name: Faroese
   iso_639_3: fao
   iso_15924: Latn
+  glottocode: faro1244
   datasets:
     flores_dev: ok
     flores_devtest: ok
 fij_Latn:
-  name: Fijian
-  glottocode: fiji1243
+  display_name: Fijian
+  eng_name: Fijian
   iso_639_3: fij
   iso_15924: Latn
+  glottocode: fiji1243
   datasets:
     flores_dev: ok
     flores_devtest: ok
 fil_Latn:
-  name: Filipino
-  glottocode: fili1244
+  display_name: Filipino
+  eng_name: Filipino
+  endonym: Wikang Filipino
   iso_639_3: fil
   iso_15924: Latn
+  glottocode: fili1244
   datasets:
     flores_dev: ok
     flores_devtest: ok
 fin_Latn:
-  name: Finnish
-  glottocode: finn1318
+  display_name: Finnish
+  eng_name: Finnish
   iso_639_3: fin
   iso_15924: Latn
+  glottocode: finn1318
   datasets:
     flores_dev: ok
     flores_devtest: ok
 fon_Latn:
-  name: Fon
-  glottocode: fonn1241
+  display_name: Fon
+  eng_name: Fon
   iso_639_3: fon
   iso_15924: Latn
+  glottocode: fonn1241
   datasets:
     flores_dev: ok
     flores_devtest: ok
 fra_Latn:
-  name: French
-  glottocode: stan1290
+  display_name: French
+  eng_name: French
   iso_639_3: fra
   iso_15924: Latn
+  glottocode: stan1290
   datasets:
     flores_dev: ok
     flores_devtest: ok
 fur_Latn:
-  name: Friulian
-  glottocode: friu1240
+  display_name: Friulian
+  eng_name: Friulian
+  endonym: furlan
   iso_639_3: fur
   iso_15924: Latn
+  glottocode: east2271
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 fuv_Latn:
-  name: Nigerian Fulfulde
-  glottocode: nige1253
+  display_name: Nigerian Fulfulde
+  eng_name:
+  - Nigerian Fulfulde
+  - Hausa States Fulfulde
   iso_639_3: fuv
   iso_15924: Latn
+  glottocode: nige1253
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 gaz_Latn:
-  name: West Central Oromo
-  glottocode: west2721
+  display_name: West Central Oromo
+  eng_name: West Central Oromo
   iso_639_3: gaz
   iso_15924: Latn
+  glottocode: west2721
   datasets:
     flores_dev: ok
     flores_devtest: ok
 gla_Latn:
-  name: Scottish Gaelic
-  glottocode: scot1245
+  display_name: Scottish Gaelic
+  eng_name: Scottish Gaelic
+  endonym: Gàidhlig
   iso_639_3: gla
   iso_15924: Latn
+  glottocode: scot1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 gle_Latn:
-  name: Irish
-  glottocode: iris1253
+  display_name: Irish
+  eng_name: Irish
   iso_639_3: gle
   iso_15924: Latn
+  glottocode: iris1253
   datasets:
     flores_dev: ok
     flores_devtest: ok
 glg_Latn:
-  name: Galician
-  glottocode: gali1258
+  display_name: Galician
+  eng_name: Galician
   iso_639_3: glg
   iso_15924: Latn
+  glottocode: gali1258
   datasets:
     flores_dev: ok
     flores_devtest: ok
 gom_Deva:
-  name: Goan Konkani
-  glottocode: goan1235
+  display_name: Goan Konkani
+  eng_name: Goan Konkani
   iso_639_3: gom
   iso_15924: Deva
+  glottocode: goan1235
   datasets:
     flores_dev: ok
     flores_devtest: ok
 gug_Latn:
-  name: Paraguayan Guaraní
-  glottocode: para1311
+  display_name: Paraguayan Guaraní
+  eng_name: Paraguayan Guaraní
   iso_639_3: gug
   iso_15924: Latn
+  glottocode: para1311
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 guj_Gujr:
-  name: Gujarati
-  glottocode: guja1252
+  display_name: Gujarati
+  eng_name: Gujarati
   iso_639_3: guj
   iso_15924: Gujr
+  glottocode: guja1252
   datasets:
     flores_dev: ok
     flores_devtest: ok
 hat_Latn:
-  name: Haitian Creole
-  glottocode: hait1244
+  display_name: Haitian Creole
+  eng_name: Haitian Creole
   iso_639_3: hat
   iso_15924: Latn
+  glottocode: hait1244
   datasets:
     flores_dev: ok
     flores_devtest: ok
 hau_Latn:
-  name: Hausa
-  glottocode: haus1257
+  display_name: Hausa
+  eng_name: Hausa
   iso_639_3: hau
   iso_15924: Latn
+  glottocode: haus1257
   datasets:
     flores_dev: ok
     flores_devtest: ok
 heb_Hebr:
-  name: Hebrew
-  glottocode: hebr1245
+  display_name: Hebrew
+  eng_name: Hebrew
   iso_639_3: heb
   iso_15924: Hebr
+  glottocode: hebr1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 hin_Deva:
-  name: Hindi
-  glottocode: hind1269
+  display_name: Hindi
+  eng_name: Hindi
   iso_639_3: hin
   iso_15924: Deva
+  glottocode: hind1269
   datasets:
     flores_dev: ok
     flores_devtest: ok
 hne_Deva:
-  name: Chhattisgarhi
-  glottocode: chha1249
+  display_name: Chhattisgarhi
+  eng_name: Chhattisgarhi
   iso_639_3: hne
   iso_15924: Deva
+  glottocode: chha1249
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 hrv_Latn:
-  name: Croatian
-  glottocode: croa1245
+  display_name: Croatian
+  eng_name: Croatian
   iso_639_3: hrv
   iso_15924: Latn
+  glottocode: croa1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 hun_Latn:
-  name: Hungarian
-  glottocode: hung1274
+  display_name: Hungarian
+  eng_name: Hungarian
   iso_639_3: hun
   iso_15924: Latn
+  glottocode: hung1274
   datasets:
     flores_dev: ok
     flores_devtest: ok
 hye_Armn:
-  name: Armenian
-  glottocode: nucl1235
+  display_name: Armenian
+  eng_name: Armenian
   iso_639_3: hye
   iso_15924: Armn
+  glottocode: nucl1235
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ibo_Latn:
-  name: Igbo
-  glottocode: nucl1417
+  display_name: Igbo
+  eng_name: Igbo
   iso_639_3: ibo
   iso_15924: Latn
+  glottocode: nucl1417
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ilo_Latn:
-  name: Ilocano
-  glottocode: ilok1237
+  display_name: Ilocano
+  eng_name: Ilocano
   iso_639_3: ilo
   iso_15924: Latn
+  glottocode: ilok1237
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ind_Latn:
-  name: Indonesian
-  glottocode: indo1316
+  display_name: Indonesian
+  eng_name: Indonesian
   iso_639_3: ind
   iso_15924: Latn
+  glottocode: indo1316
   datasets:
     flores_dev: ok
     flores_devtest: ok
 isl_Latn:
-  name: Icelandic
-  glottocode: icel1247
+  display_name: Icelandic
+  eng_name: Icelandic
   iso_639_3: isl
   iso_15924: Latn
+  glottocode: icel1247
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ita_Latn:
-  name: Italian
-  glottocode: ital1282
+  display_name: Italian
+  eng_name: Italian
   iso_639_3: ita
   iso_15924: Latn
+  glottocode: ital1282
   datasets:
     flores_dev: ok
     flores_devtest: ok
 jav_Latn:
-  name: Javanese
-  glottocode: java1254
+  display_name: Javanese
+  eng_name: Javanese
   iso_639_3: jav
   iso_15924: Latn
+  glottocode: java1254
   datasets:
     flores_dev: ok
     flores_devtest: ok
 jpn_Jpan:
-  name: Japanese
-  glottocode: nucl1643
+  display_name: Japanese
+  eng_name: Japanese
   iso_639_3: jpn
   iso_15924: Jpan
+  glottocode: nucl1643
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kab_Latn:
-  name: Kabyle
-  glottocode: kaby1243
+  display_name: Kabyle
+  eng_name: Kabyle
   iso_639_3: kab
   iso_15924: Latn
+  glottocode: kaby1243
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kac_Latn:
-  name: Jingpho
-  glottocode: kach1280
+  display_name: Jingpho
+  eng_name: Jingpho
   iso_639_3: kac
   iso_15924: Latn
+  glottocode: kach1280
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kam_Latn:
-  name: Kamba
-  glottocode: kamb1297
+  display_name: Kamba
+  eng_name: Kamba
   iso_639_3: kam
   iso_15924: Latn
+  glottocode: kamb1297
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kan_Knda:
-  name: Kannada
-  glottocode: nucl1305
+  display_name: Kannada
+  eng_name: Kannada
   iso_639_3: kan
   iso_15924: Knda
+  glottocode: nucl1305
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kas_Arab:
-  name: Kashmiri (Arabic script)
-  glottocode: kash1277
+  display_name: Kashmiri (Arabic script)
+  eng_name: Kashmiri
+  endonym: کٲشُر
   iso_639_3: kas
   iso_15924: Arab
+  glottocode: kash1277
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 kas_Deva:
-  name: Kashmiri (Devanagari script)
-  glottocode: kash1277
+  display_name: Kashmiri (Devanagari script)
+  eng_name: Kashmiri
+  endonym: 𑆑𑆳𑆯𑆶𑆫𑇀
   iso_639_3: kas
   iso_15924: Deva
+  glottocode: kash1277
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 kat_Geor:
-  name: Georgian
-  glottocode: nucl1302
+  display_name: Georgian
+  eng_name: Georgian
   iso_639_3: kat
   iso_15924: Geor
+  glottocode: nucl1302
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kaz_Cyrl:
-  name: Kazakh
-  glottocode: kaza1248
+  display_name: Kazakh
+  eng_name: Kazakh
   iso_639_3: kaz
   iso_15924: Cyrl
+  glottocode: kaza1248
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kbp_Latn:
-  name: Kabiyè
-  glottocode: kabi1261
+  display_name: Kabiyè
+  eng_name: Kabiyè
   iso_639_3: kbp
   iso_15924: Latn
+  glottocode: kabi1261
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kea_Latn:
-  name: Kabuverdianu
-  glottocode: kabu1256
+  display_name: Kabuverdianu
+  eng_name: Kabuverdianu
   iso_639_3: kea
   iso_15924: Latn
+  glottocode: kabu1256
   datasets:
     flores_dev: ok
     flores_devtest: ok
 khk_Cyrl:
-  name: Halh Mongolian
-  glottocode: halh1238
+  display_name: Halh Mongolian
+  eng_name: Halh Mongolian
   iso_639_3: khk
   iso_15924: Cyrl
+  glottocode: halh1238
   datasets:
     flores_dev: ok
     flores_devtest: ok
 khm_Khmr:
-  name: Khmer
-  glottocode: cent1989
+  display_name: Khmer
+  eng_name: Khmer
   iso_639_3: khm
   iso_15924: Khmr
+  glottocode: cent1989
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kik_Latn:
-  name: Kikuyu
-  glottocode: kiku1240
+  display_name: Kikuyu
+  eng_name: Kikuyu
   iso_639_3: kik
   iso_15924: Latn
+  glottocode: kiku1240
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kin_Latn:
-  name: Kinyarwanda
-  glottocode: kiny1244
+  display_name: Kinyarwanda
+  eng_name: Kinyarwanda
   iso_639_3: kin
   iso_15924: Latn
+  glottocode: kiny1244
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kir_Cyrl:
-  name: Kyrgyz
-  glottocode: kirg1245
+  display_name: Kyrgyz
+  eng_name: Kyrgyz
   iso_639_3: kir
   iso_15924: Cyrl
+  glottocode: kirg1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kmb_Latn:
-  name: Kimbundu
-  glottocode: kimb1241
+  display_name: Kimbundu
+  eng_name: Kimbundu
   iso_639_3: kmb
   iso_15924: Latn
+  glottocode: kimb1241
   datasets:
     flores_dev: ok
     flores_devtest: ok
 kmr_Latn:
-  name: Northern Kurdish
-  glottocode: nort2641
+  display_name: Northern Kurdish
+  eng_name: Northern Kurdish
   iso_639_3: kmr
   iso_15924: Latn
+  glottocode: nort2641
   datasets:
     flores_dev: ok
     flores_devtest: ok
 knc_Arab:
-  name: Central Kanuri (Arabic script)
-  glottocode: cent2050
+  display_name: Central Kanuri (Arabic script)
+  eng_name: Central Kanuri
   iso_639_3: knc
   iso_15924: Arab
+  glottocode: cent2050
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 knc_Latn:
-  name: Central Kanuri (Latin script)
-  glottocode: cent2050
+  display_name: Central Kanuri (Latin script)
+  eng_name: Central Kanuri
   iso_639_3: knc
   iso_15924: Latn
+  glottocode: cent2050
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 kor_Hang:
-  name: Korean
-  glottocode: kore1280
+  display_name: Korean
+  eng_name: Korean
   iso_639_3: kor
   iso_15924: Hang
+  glottocode: kore1280
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ktu_Latn:
-  name: Kituba (DRC)
-  glottocode: kitu1246
+  display_name: Kituba (DRC)
+  eng_name: Kituba (DRC)
+  endonym: Kikongo ya leta
   iso_639_3: ktu
   iso_15924: Latn
+  glottocode: kitu1246
   datasets:
     flores_dev: ok
     flores_devtest: ok
 lao_Laoo:
-  name: Lao
-  glottocode: laoo1244
+  display_name: Lao
+  eng_name: Lao
   iso_639_3: lao
   iso_15924: Laoo
+  glottocode: laoo1244
   datasets:
     flores_dev: ok
     flores_devtest: ok
 lij_Latn:
-  name: Genoese Ligurian
-  glottocode: geno1240
+  display_name: Ligurian (Genoese)
+  eng_name: Genoese Ligurian
+  endonym: zeneise
   iso_639_3: lij
   iso_15924: Latn
+  glottocode: geno1240
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 lim_Latn:
-  name: Limburgish
-  glottocode: limb1263
+  display_name: Limburgish
+  eng_name: Limburgish
   iso_639_3: lim
   iso_15924: Latn
+  glottocode: limb1263
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 lin_Latn:
-  name: Lingala
-  glottocode: ling1263
+  display_name: Lingala
+  eng_name: Lingala
   iso_639_3: lin
   iso_15924: Latn
+  glottocode: ling1263
   datasets:
     flores_dev: ok
     flores_devtest: ok
 lit_Latn:
-  name: Lithuanian
-  glottocode: lith1251
+  display_name: Lithuanian
+  eng_name: Lithuanian
   iso_639_3: lit
   iso_15924: Latn
+  glottocode: lith1251
   datasets:
     flores_dev: ok
     flores_devtest: ok
 lmo_Latn:
-  name: Lombard
-  glottocode: lomb1257
+  display_name: Lombard
+  eng_name: Lombard
   iso_639_3: lmo
   iso_15924: Latn
+  glottocode: lomb1257
   datasets:
     flores_dev: warn
     flores_devtest: warn
@@ -935,489 +1097,560 @@ lmo_Latn:
   issues:
   - https://github.com/openlanguagedata/flores/issues/5
 ltg_Latn:
-  name: Latgalian
-  glottocode: east2282
+  display_name: Latgalian
+  eng_name: Latgalian
   iso_639_3: ltg
   iso_15924: Latn
+  glottocode: east2282
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 ltz_Latn:
-  name: Luxembourgish
-  glottocode: luxe1241
+  display_name: Luxembourgish
+  eng_name: Luxembourgish
   iso_639_3: ltz
   iso_15924: Latn
+  glottocode: luxe1241
   datasets:
     flores_dev: ok
     flores_devtest: ok
 lua_Latn:
-  name: Luba-Kasai
-  glottocode: luba1249
+  display_name: Luba-Kasai
+  eng_name: Luba-Kasai
   iso_639_3: lua
   iso_15924: Latn
+  glottocode: luba1249
   datasets:
     flores_dev: ok
     flores_devtest: ok
 lug_Latn:
-  name: Ganda
-  glottocode: gand1255
+  display_name: Ganda
+  eng_name: Ganda
   iso_639_3: lug
   iso_15924: Latn
+  glottocode: gand1255
   datasets:
     flores_dev: ok
     flores_devtest: ok
 luo_Latn:
-  name: Luo
-  glottocode: luok1236
+  display_name: Luo
+  eng_name: Luo
   iso_639_3: luo
   iso_15924: Latn
+  glottocode: luok1236
   datasets:
     flores_dev: ok
     flores_devtest: ok
 lus_Latn:
-  name: Mizo
-  glottocode: lush1249
+  display_name: Mizo
+  eng_name: Mizo
   iso_639_3: lus
   iso_15924: Latn
+  glottocode: lush1249
   datasets:
     flores_dev: ok
     flores_devtest: ok
 lvs_Latn:
-  name: Standard Latvian
-  glottocode: stan1325
+  display_name: Standard Latvian
+  eng_name: Standard Latvian
   iso_639_3: lvs
   iso_15924: Latn
+  glottocode: stan1325
   datasets:
     flores_dev: ok
     flores_devtest: ok
 mag_Deva:
-  name: Magahi
-  glottocode: maga1260
+  display_name: Magahi
+  eng_name: Magahi
   iso_639_3: mag
   iso_15924: Deva
+  glottocode: maga1260
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 mai_Deva:
-  name: Maithili
-  glottocode: mait1250
+  display_name: Maithili
+  eng_name: Maithili
   iso_639_3: mai
   iso_15924: Deva
+  glottocode: mait1250
   datasets:
     flores_dev: ok
     flores_devtest: ok
 mal_Mlym:
-  name: Malayalam
-  glottocode: mala1464
+  display_name: Malayalam
+  eng_name: Malayalam
   iso_639_3: mal
   iso_15924: Mlym
+  glottocode: mala1464
   datasets:
     flores_dev: ok
     flores_devtest: ok
 mar_Deva:
-  name: Marathi
-  glottocode: mara1378
+  display_name: Marathi
+  eng_name: Marathi
   iso_639_3: mar
   iso_15924: Deva
+  glottocode: mara1378
   datasets:
     flores_dev: ok
     flores_devtest: ok
 mhr_Cyrl:
-  name: Meadow Mari
-  glottocode: east2328
+  display_name: Meadow Mari
+  eng_name:
+  - Meadow Mari
+  - Grassland Mari
+  endonym:
+  - олык марий
+  - марий
   iso_639_3: mhr
   iso_15924: Cyrl
+  glottocode: gras1239
   datasets:
     flores_dev: ok
 min_Arab:
-  name: Minangkabau (Arabic script)
-  glottocode: mina1268
+  display_name: Minangkabau (Jawi script)
+  eng_name: Minangkabau
+  endonym: بَاسُوْ مِيْنڠكَابَاوْ
   iso_639_3: min
   iso_15924: Arab
+  glottocode: mina1268
   datasets:
     flores_dev: ok
     flores_devtest: ok
 min_Latn:
-  name: Minangkabau (Latin script)
-  glottocode: mina1268
+  display_name: Minangkabau (Latin script)
+  eng_name: Minangkabau
+  endonym: Baso Minangkabau
   iso_639_3: min
   iso_15924: Latn
+  glottocode: mina1268
   datasets:
     flores_dev: ok
     flores_devtest: ok
 mkd_Cyrl:
-  name: Macedonian
-  glottocode: mace1250
+  display_name: Macedonian
+  eng_name: Macedonian
   iso_639_3: mkd
   iso_15924: Cyrl
+  glottocode: mace1250
   datasets:
     flores_dev: ok
     flores_devtest: ok
 mlt_Latn:
-  name: Maltese
-  glottocode: malt1254
+  display_name: Maltese
+  eng_name: Maltese
   iso_639_3: mlt
   iso_15924: Latn
+  glottocode: malt1254
   datasets:
     flores_dev: ok
     flores_devtest: ok
 mni_Beng:
-  name: Meitei (Bengali script)
-  glottocode: mani1292
+  display_name: Meitei (Manipuri, Bengali script)
+  eng_name: Meitei (Manipuri)
+  endonym:  মৈতৈলোন
   iso_639_3: mni
   iso_15924: Beng
+  glottocode: mani1292
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 mni_Mtei:
-  name: Meitei (Meitei script)
-  glottocode: mani1292
+  display_name: Meitei (Manipuri, Meitei script)
+  eng_name: Meitei (Manipuri)
+  endonym: ꯃꯩꯇꯩꯂꯣꯟ
   iso_639_3: mni
   iso_15924: Mtei
+  glottocode: mani1292
   datasets:
     flores_dev: ok
 mos_Latn:
-  name: Mossi
-  glottocode: moss1236
+  display_name: Mossi
+  eng_name: Mossi
   iso_639_3: mos
   iso_15924: Latn
+  glottocode: moss1236
   datasets:
     flores_dev: ok
     flores_devtest: ok
 mri_Latn:
-  name: Maori
-  glottocode: maor1246
+  display_name: Maori
+  eng_name: Maori
   iso_639_3: mri
   iso_15924: Latn
+  glottocode: maor1246
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 mya_Mymr:
-  name: Burmese
-  glottocode: nucl1310
+  display_name: Burmese
+  eng_name: Burmese
   iso_639_3: mya
   iso_15924: Mymr
+  glottocode: nucl1310
   datasets:
     flores_dev: ok
     flores_devtest: ok
 nld_Latn:
-  name: Dutch
-  glottocode: dutc1256
+  display_name: Dutch
+  eng_name: Dutch
   iso_639_3: nld
   iso_15924: Latn
+  glottocode: dutc1256
   datasets:
     flores_dev: ok
     flores_devtest: ok
 nno_Latn:
-  name: Norwegian Nynorsk
-  glottocode: norw1262
+  display_name: Norwegian Nynorsk
+  eng_name: Norwegian Nynorsk
   iso_639_3: nno
   iso_15924: Latn
+  glottocode: norw1262
   datasets:
     flores_dev: ok
     flores_devtest: ok
 nob_Latn:
-  name: Norwegian Bokmål
-  glottocode: norw1259
+  display_name: Norwegian Bokmål
+  eng_name: Norwegian Bokmål
   iso_639_3: nob
   iso_15924: Latn
+  glottocode: norw1259
   datasets:
     flores_dev: ok
     flores_devtest: ok
 npi_Deva:
-  name: Nepali
-  glottocode: nepa1254
+  display_name: Nepali
+  eng_name: Nepali
   iso_639_3: npi
   iso_15924: Deva
+  glottocode: nepa1254
   datasets:
     flores_dev: ok
     flores_devtest: ok
 nqo_Nkoo:
-  name: Nko
-  glottocode: nkoa1234
+  display_name: Nko
+  eng_name: Nko
   iso_639_3: nqo
   iso_15924: Nkoo
+  glottocode: nkoa1234
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 nso_Latn:
-  name: Northern Sotho
-  glottocode: pedi1238
+  display_name: Northern Sotho
+  eng_name: Northern Sotho
   iso_639_3: nso
   iso_15924: Latn
+  glottocode: pedi1238
   datasets:
     flores_dev: ok
     flores_devtest: ok
 nus_Latn:
-  name: Nuer
-  glottocode: nuer1246
+  display_name: Nuer
+  eng_name: Nuer
   iso_639_3: nus
   iso_15924: Latn
+  glottocode: nuer1246
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 nya_Latn:
-  name: Nyanja
-  glottocode: nyan1308
+  display_name: Nyanja
+  eng_name: Nyanja
   iso_639_3: nya
   iso_15924: Latn
+  glottocode: nyan1308
   datasets:
     flores_dev: ok
     flores_devtest: ok
 oci_Latn:
-  name: Occitan
-  glottocode: occi1239
+  display_name: Occitan
+  eng_name: Occitan
   iso_639_3: oci
   iso_15924: Latn
+  glottocode: occi1239
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ory_Orya:
-  name: Odia
-  glottocode: oriy1255
+  display_name: Odia
+  eng_name: Odia
   iso_639_3: ory
   iso_15924: Orya
+  glottocode: oriy1255
   datasets:
     flores_dev: ok
     flores_devtest: ok
 pag_Latn:
-  name: Pangasinan
-  glottocode: pang1290
+  display_name: Pangasinan
+  eng_name: Pangasinan
   iso_639_3: pag
   iso_15924: Latn
+  glottocode: pang1290
   datasets:
     flores_dev: ok
     flores_devtest: ok
 pan_Guru:
-  name: Eastern Panjabi
-  glottocode: panj1256
+  display_name: Eastern Panjabi
+  eng_name: Eastern Panjabi
   iso_639_3: pan
   iso_15924: Guru
+  glottocode: panj1256
   datasets:
     flores_dev: ok
     flores_devtest: ok
 pap_Latn:
-  name: Papiamento
-  glottocode: papi1253
+  display_name: Papiamento
+  eng_name: Papiamento
   iso_639_3: pap
   iso_15924: Latn
+  glottocode: papi1253
   datasets:
     flores_dev: ok
     flores_devtest: ok
 pbt_Arab:
-  name: Southern Pashto
-  glottocode: sout2649
+  display_name: Southern Pashto
+  eng_name: Southern Pashto
   iso_639_3: pbt
   iso_15924: Arab
+  glottocode: sout2649
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 pes_Arab:
-  name: Western Persian
-  glottocode: west2369
+  display_name: Western Persian
+  eng_name: Western Persian
   iso_639_3: pes
   iso_15924: Arab
+  glottocode: west2369
   datasets:
     flores_dev: ok
     flores_devtest: ok
 plt_Latn:
-  name: Plateau Malagasy
-  glottocode: plat1254
+  display_name: Plateau Malagasy
+  eng_name: Plateau Malagasy
   iso_639_3: plt
   iso_15924: Latn
+  glottocode: plat1254
   datasets:
     flores_dev: ok
     flores_devtest: ok
 pol_Latn:
-  name: Polish
-  glottocode: poli1260
+  display_name: Polish
+  eng_name: Polish
   iso_639_3: pol
   iso_15924: Latn
+  glottocode: poli1260
   datasets:
     flores_dev: ok
     flores_devtest: ok
 por_Latn:
-  name: Brazilian Portuguese
-  glottocode: braz1246
+  display_name: Portuguese (Brazilian)
+  eng_name: Brazilian Portuguese
   iso_639_3: por
   iso_15924: Latn
+  glottocode: braz1246
   datasets:
     flores_dev: ok
     flores_devtest: ok
 prs_Arab:
-  name: Dari
-  glottocode: dari1249
+  display_name: Dari
+  eng_name: Dari
   iso_639_3: prs
   iso_15924: Arab
+  glottocode: dari1249
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 quy_Latn:
-  name: Ayacucho Quechua
-  glottocode: ayac1239
+  display_name: Ayacucho Quechua
+  eng_name: Ayacucho Quechua
   iso_639_3: quy
   iso_15924: Latn
+  glottocode: ayac1239
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ron_Latn:
-  name: Romanian
-  glottocode: roma1327
+  display_name: Romanian
+  eng_name: Romanian
   iso_639_3: ron
   iso_15924: Latn
+  glottocode: roma1327
   datasets:
     flores_dev: ok
     flores_devtest: ok
 run_Latn:
-  name: Rundi
-  glottocode: rund1242
+  display_name: Rundi
+  eng_name: Rundi
   iso_639_3: run
   iso_15924: Latn
+  glottocode: rund1242
   datasets:
     flores_dev: ok
     flores_devtest: ok
 rus_Cyrl:
-  name: Russian
-  glottocode: russ1263
+  display_name: Russian
+  eng_name: Russian
   iso_639_3: rus
   iso_15924: Cyrl
+  glottocode: russ1263
   datasets:
     flores_dev: ok
     flores_devtest: ok
 sag_Latn:
-  name: Sango
-  glottocode: sang1328
+  display_name: Sango
+  eng_name: Sango
   iso_639_3: sag
   iso_15924: Latn
+  glottocode: sang1328
   datasets:
     flores_dev: ok
     flores_devtest: ok
 san_Deva:
-  name: Sanskrit
-  glottocode: sans1269
+  display_name: Sanskrit
+  eng_name: Sanskrit
   iso_639_3: san
   iso_15924: Deva
+  glottocode: sans1269
   datasets:
     flores_dev: ok
     flores_devtest: ok
 sat_Olck:
-  name: Santali
-  glottocode: sant1410
+  display_name: Santali
+  eng_name: Santali
   iso_639_3: sat
   iso_15924: Olck
+  glottocode: sant1410
   datasets:
     flores_dev: ok
     flores_devtest: ok
 scn_Latn:
-  name: Sicilian
-  glottocode: sici1248
+  display_name: Sicilian
+  eng_name: Sicilian
   iso_639_3: scn
   iso_15924: Latn
+  glottocode: sici1248
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 shn_Mymr:
-  name: Shan
-  glottocode: shan1277
+  display_name: Shan
+  eng_name: Shan
   iso_639_3: shn
   iso_15924: Mymr
+  glottocode: shan1277
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 sin_Sinh:
-  name: Sinhala
-  glottocode: sinh1246
+  display_name: Sinhala
+  eng_name: Sinhala
   iso_639_3: sin
   iso_15924: Sinh
+  glottocode: sinh1246
   datasets:
     flores_dev: ok
     flores_devtest: ok
 slk_Latn:
-  name: Slovak
-  glottocode: slov1269
+  display_name: Slovak
+  eng_name: Slovak
   iso_639_3: slk
   iso_15924: Latn
+  glottocode: slov1269
   datasets:
     flores_dev: ok
     flores_devtest: ok
 slv_Latn:
-  name: Slovenian
-  glottocode: slov1268
+  display_name: Slovenian
+  eng_name: Slovenian
   iso_639_3: slv
   iso_15924: Latn
+  glottocode: slov1268
   datasets:
     flores_dev: ok
     flores_devtest: ok
 smo_Latn:
-  name: Samoan
-  glottocode: samo1305
+  display_name: Samoan
+  eng_name: Samoan
   iso_639_3: smo
   iso_15924: Latn
+  glottocode: samo1305
   datasets:
     flores_dev: ok
     flores_devtest: ok
 sna_Latn:
-  name: Shona
-  glottocode: shon1251
+  display_name: Shona
+  eng_name: Shona
   iso_639_3: sna
   iso_15924: Latn
+  glottocode: shon1251
   datasets:
     flores_dev: ok
     flores_devtest: ok
 snd_Arab:
-  name: Sindhi (Arabic script)
-  glottocode: sind1272
+  display_name: Sindhi (Arabic script)
+  eng_name: Sindhi
+  endonym: سِنڌِي
   iso_639_3: snd
   iso_15924: Arab
+  glottocode: sind1272
   datasets:
     flores_dev: ok
     flores_devtest: ok
 snd_Deva:
-  name: Sindhi (Devanagari script)
-  glottocode: sind1272
+  display_name: Sindhi (Devanagari script)
+  eng_name: Sindhi
+  endonym: सिन्धी
   iso_639_3: snd
   iso_15924: Deva
+  glottocode: sind1272
   datasets:
     flores_dev: ok
 som_Latn:
-  name: Somali
-  glottocode: soma1255
+  display_name: Somali
+  eng_name: Somali
   iso_639_3: som
   iso_15924: Latn
+  glottocode: soma1255
   datasets:
     flores_dev: ok
     flores_devtest: ok
 sot_Latn:
-  name: Southern Sotho
-  glottocode: sout2807
+  display_name: Southern Sotho
+  eng_name: Southern Sotho
   iso_639_3: sot
   iso_15924: Latn
+  glottocode: sout2807
   datasets:
     flores_dev: ok
     flores_devtest: ok
 spa_Latn:
-  name: Latin American Spanish
-  glottocode: amer1254
+  display_name: Spanish (Latin American)
+  eng_name: Latin American Spanish
   iso_639_3: spa
   iso_15924: Latn
+  glottocode: amer1254
   datasets:
     flores_dev: ok
     flores_devtest: ok
 srd_Latn:
-  name: Sardinian
-  glottocode: sard1257
+  display_name: Sardinian
+  eng_name: Sardinian
   iso_639_3: srd
   iso_15924: Latn
+  glottocode: sard1257
   datasets:
     flores_dev: warn
     flores_devtest: warn
@@ -1425,311 +1658,358 @@ srd_Latn:
   issues:
   - https://github.com/openlanguagedata/flores/issues/6
 srp_Cyrl:
-  name: Serbian
-  glottocode: serb1264
+  display_name: Serbian
+  eng_name: Serbian
   iso_639_3: srp
   iso_15924: Cyrl
+  glottocode: serb1264
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ssw_Latn:
-  name: Swati
-  glottocode: swat1243
+  display_name: Swati
+  eng_name: Swati
   iso_639_3: ssw
   iso_15924: Latn
+  glottocode: swat1243
   datasets:
     flores_dev: ok
     flores_devtest: ok
 sun_Latn:
-  name: Sundanese
-  glottocode: sund1252
+  display_name: Sundanese
+  eng_name: Sundanese
   iso_639_3: sun
   iso_15924: Latn
+  glottocode: sund1252
   datasets:
     flores_dev: ok
     flores_devtest: ok
 swe_Latn:
-  name: Swedish
-  glottocode: swed1254
+  display_name: Swedish
+  eng_name: Swedish
   iso_639_3: swe
   iso_15924: Latn
+  glottocode: swed1254
   datasets:
     flores_dev: ok
     flores_devtest: ok
 swh_Latn:
-  name: Swahili
-  glottocode: swah1253
+  display_name: Swahili
+  eng_name: Swahili
   iso_639_3: swh
   iso_15924: Latn
+  glottocode: swah1253
   datasets:
     flores_dev: ok
     flores_devtest: ok
 szl_Latn:
-  name: Silesian
-  glottocode: sile1253
+  display_name: Silesian
+  eng_name: Silesian
   iso_639_3: szl
   iso_15924: Latn
+  glottocode: sile1253
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 tam_Taml:
-  name: Tamil
-  glottocode: tami1289
+  display_name: Tamil
+  eng_name: Tamil
   iso_639_3: tam
   iso_15924: Taml
+  glottocode: tami1289
   datasets:
     flores_dev: ok
     flores_devtest: ok
 taq_Latn:
-  name: Tamasheq (Latin script)
-  glottocode: tama1365
+  display_name: Tamasheq (Latin script)
+  eng_name:
+  - Tamasheq
+  - Tamashek
   iso_639_3: taq
   iso_15924: Latn
+  glottocode: tama1365
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 taq_Tfng:
-  name: Tamasheq (Tifinagh script)
-  glottocode: tama1365
+  display_name: Tamasheq (Tifinagh script)
+  eng_name:
+  - Tamasheq
+  - Tamashek
   iso_639_3: taq
   iso_15924: Tfng
+  glottocode: tama1365
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 tat_Cyrl:
-  name: Tatar
-  glottocode: tata1255
+  display_name: Tatar
+  eng_name: Tatar
   iso_639_3: tat
   iso_15924: Cyrl
+  glottocode: tata1255
   datasets:
     flores_dev: ok
     flores_devtest: ok
 tel_Telu:
-  name: Telugu
-  glottocode: telu1262
+  display_name: Telugu
+  eng_name: Telugu
   iso_639_3: tel
   iso_15924: Telu
+  glottocode: telu1262
   datasets:
     flores_dev: ok
     flores_devtest: ok
 tgk_Cyrl:
-  name: Tajik
-  glottocode: taji1245
+  display_name: Tajik
+  eng_name: Tajik
   iso_639_3: tgk
   iso_15924: Cyrl
+  glottocode: taji1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 tha_Thai:
-  name: Thai
-  glottocode: thai1261
+  display_name: Thai
+  eng_name: Thai
   iso_639_3: tha
   iso_15924: Thai
+  glottocode: thai1261
   datasets:
     flores_dev: ok
     flores_devtest: ok
 tir_Ethi:
-  name: Tigrinya
-  glottocode: tigr1271
+  display_name: Tigrinya
+  eng_name: Tigrinya
   iso_639_3: tir
   iso_15924: Ethi
+  glottocode: tigr1271
   datasets:
     flores_dev: ok
     flores_devtest: ok
 tpi_Latn:
-  name: Tok Pisin
-  glottocode: tokp1240
+  display_name: Tok Pisin
+  eng_name: Tok Pisin
   iso_639_3: tpi
   iso_15924: Latn
+  glottocode: tokp1240
   datasets:
     flores_dev: ok
     flores_devtest: ok
 tsn_Latn:
-  name: Tswana
-  glottocode: tswa1253
+  display_name: Tswana
+  eng_name: Tswana
   iso_639_3: tsn
   iso_15924: Latn
+  glottocode: tswa1253
   datasets:
     flores_dev: ok
     flores_devtest: ok
 tso_Latn:
-  name: Tsonga
-  glottocode: tson1249
+  display_name: Tsonga
+  eng_name: Tsonga
   iso_639_3: tso
   iso_15924: Latn
+  glottocode: tson1249
   datasets:
     flores_dev: ok
     flores_devtest: ok
 tuk_Latn:
-  name: Turkmen
-  glottocode: turk1304
+  display_name: Turkmen
+  eng_name: Turkmen
   iso_639_3: tuk
   iso_15924: Latn
+  glottocode: turk1304
   datasets:
     flores_dev: ok
     flores_devtest: ok
 tum_Latn:
-  name: Tumbuka
-  glottocode: tumb1250
+  display_name: Tumbuka
+  eng_name: Tumbuka
   iso_639_3: tum
   iso_15924: Latn
+  glottocode: tumb1250
   datasets:
     flores_dev: ok
     flores_devtest: ok
 tur_Latn:
-  name: Turkish
-  glottocode: nucl1301
+  display_name: Turkish
+  eng_name: Turkish
   iso_639_3: tur
   iso_15924: Latn
+  glottocode: nucl1301
   datasets:
     flores_dev: ok
     flores_devtest: ok
 twi_Latn_akua1239:
-  name: Akuapem Twi
-  glottocode: akua1239
+  display_name: Akuapem Twi
+  eng_name: Akuapem Twi
   iso_639_3: twi
   iso_15924: Latn
+  glottocode: akua1239
   datasets:
     flores_dev: ok
     flores_devtest: ok
 twi_Latn_asan1239:
-  name: Asante Twi
-  glottocode: asan1239
+  display_name: Asante Twi
+  eng_name: Asante Twi
   iso_639_3: twi
   iso_15924: Latn
+  glottocode: asan1239
   datasets:
     flores_dev: ok
     flores_devtest: ok
 uig_Arab:
-  name: Uyghur
-  glottocode: uigh1240
+  display_name: Uyghur
+  eng_name: Uyghur
   iso_639_3: uig
   iso_15924: Arab
+  glottocode: uigh1240
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ukr_Cyrl:
-  name: Ukrainian
-  glottocode: ukra1253
+  display_name: Ukrainian
+  eng_name: Ukrainian
   iso_639_3: ukr
   iso_15924: Cyrl
+  glottocode: ukra1253
   datasets:
     flores_dev: ok
     flores_devtest: ok
 umb_Latn:
-  name: Umbundu
-  glottocode: umbu1257
+  display_name: Umbundu
+  eng_name: Umbundu
   iso_639_3: umb
   iso_15924: Latn
+  glottocode: umbu1257
   datasets:
     flores_dev: ok
     flores_devtest: ok
 urd_Arab:
-  name: Urdu
-  glottocode: urdu1245
+  display_name: Urdu
+  eng_name: Urdu
   iso_639_3: urd
   iso_15924: Arab
+  glottocode: urdu1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 uzn_Latn:
-  name: Northern Uzbek
-  glottocode: nort2690
+  display_name: Northern Uzbek
+  eng_name: Northern Uzbek
   iso_639_3: uzn
   iso_15924: Latn
+  glottocode: nort2690
   datasets:
     flores_dev: ok
     flores_devtest: ok
 vec_Latn:
-  name: Venetian
-  glottocode: vene1258
+  display_name: Venetian
+  eng_name: Venetian
   iso_639_3: vec
   iso_15924: Latn
+  glottocode: vene1259
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 vie_Latn:
-  name: Vietnamese
-  glottocode: viet1252
+  display_name: Vietnamese
+  eng_name: Vietnamese
   iso_639_3: vie
   iso_15924: Latn
+  glottocode: viet1252
   datasets:
     flores_dev: ok
     flores_devtest: ok
 war_Latn:
-  name: Waray
-  glottocode: wara1300
+  display_name: Waray
+  eng_name: Waray
   iso_639_3: war
   iso_15924: Latn
+  glottocode: wara1300
   datasets:
     flores_dev: ok
     flores_devtest: ok
 wol_Latn:
-  name: Wolof
-  glottocode: nucl1347
+  display_name: Wolof
+  eng_name: Wolof
   iso_639_3: wol
   iso_15924: Latn
+  glottocode: nucl1347
   datasets:
     flores_dev: ok
     flores_devtest: ok
 xho_Latn:
-  name: Xhosa
-  glottocode: xhos1239
+  display_name: Xhosa
+  eng_name: Xhosa
   iso_639_3: xho
   iso_15924: Latn
+  glottocode: xhos1239
   datasets:
     flores_dev: ok
     flores_devtest: ok
 ydd_Hebr:
-  name: Eastern Yiddish
-  glottocode: east2295
+  display_name: Eastern Yiddish
+  eng_name: Eastern Yiddish
   iso_639_3: ydd
   iso_15924: Hebr
+  glottocode: east2295
   datasets:
     flores_dev: ok
     flores_devtest: ok
 yor_Latn:
-  name: Yoruba
-  glottocode: yoru1245
+  display_name: Yoruba
+  eng_name: Yoruba
   iso_639_3: yor
   iso_15924: Latn
+  glottocode: yoru1245
   datasets:
     flores_dev: ok
     flores_devtest: ok
 yue_Hant:
-  name: Hong Kong Cantonese
-  glottocode: xian1255
+  display_name: Yue Chinese (Hong Kong Cantonese)
+  eng_name: Hong Kong Cantonese
+  endonym: 粵語
   iso_639_3: yue
   iso_15924: Hant
+  glottocode: xian1255
   datasets:
     flores_dev: ok
     flores_devtest: ok
 zgh_Tfng:
-  name: Standard Moroccan Tamazight
-  glottocode: stan1324
+  display_name: Standard Moroccan Tamazight
+  eng_name:
+  - Standard Moroccan Tamazight
+  - Standard Moroccan Amazigh
+  - Standard Moroccan Berber
+  endonym: ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ
   iso_639_3: zgh
   iso_15924: Tfng
+  glottocode: stan1324
   datasets:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
 zsm_Latn:
-  name: Standard Malay
-  glottocode: stan1306
+  display_name: Standard Malay
+  eng_name: Standard Malay
   iso_639_3: zsm
   iso_15924: Latn
+  glottocode: stan1306
   datasets:
     flores_dev: ok
     flores_devtest: ok
 zul_Latn:
-  name: Zulu
-  glottocode: zulu1248
+  display_name: Zulu
+  eng_name: Zulu
   iso_639_3: zul
   iso_15924: Latn
+  glottocode: zulu1248
   datasets:
     flores_dev: ok
     flores_devtest: ok
