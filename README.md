@@ -1,0 +1,29 @@
+# oldi.org
+
+This is the website <https://oldi.org>. We use the Jinja2 templates in `templates/` to avoid code duplication of common elements such as HTML page headers. Static files are located in `static/`.
+
+## Building
+
+The `build.py` script builds the website into the build directory `build/`. This is the directory that is served by our host (currently Cloudflare Pages). When a new commit is pushed to GitHub, the host will automatically run the build script and update the public-facing site based on what is in the build directory.
+
+The build process is straightforward:
+1. We load all language metadata from `languages.yaml`, and copy it to the build directory (so it can be accessed by the public).
+2. We copy all static content in `static/` to the build directory.
+3. We compile all templates in `templates/` to the build directory.
+
+A utility script `sort_languages_yaml.py` is provided to help keep the YAML file sorted by key.
+
+### Local builds
+
+For local builds, first install the required packages:
+```
+pip install -r requirements.txt
+pip install oyaml
+```
+
+To build content and spin up a local HTTP server:
+```
+python build.py && python -m http.server --directory build
+```
+
+This command should be re-run when the source is changed. TODO: auto-reload.

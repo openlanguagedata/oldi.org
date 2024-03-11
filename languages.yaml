@@ -48,22 +48,6 @@ afr_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-apc_Arab_sout3123:
-  name: South Levantine Arabic
-  glottocode: sout3123
-  iso_639_3: ajp
-  iso_15924: Arab
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
-twi_Latn_asan1239:
-  name: Asante Twi
-  glottocode: asan1239
-  iso_639_3: twi
-  iso_15924: Latn
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
 als_Latn:
   name: Tosk Albanian
   glottocode: tosk1239
@@ -83,6 +67,14 @@ amh_Ethi:
 apc_Arab_nort3139:
   name: North Levantine Arabic
   glottocode: nort3139
+  iso_639_3: apc
+  iso_15924: Arab
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+apc_Arab_sout3123:
+  name: South Levantine Arabic
+  glottocode: sout3123
   iso_639_3: apc
   iso_15924: Arab
   datasets:
@@ -424,6 +416,14 @@ dzo_Tibt:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
+ekk_Latn:
+  name: Estonian
+  glottocode: kesk1234
+  iso_639_3: ekk
+  iso_15924: Latn
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
 ell_Grek:
   name: Greek
   glottocode: mode1248
@@ -445,14 +445,6 @@ epo_Latn:
   name: Esperanto
   glottocode: espe1235
   iso_639_3: epo
-  iso_15924: Latn
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
-ekk_Latn:
-  name: Estonian
-  glottocode: kesk1234
-  iso_639_3: ekk
   iso_15924: Latn
   datasets:
     flores_dev: ok
@@ -485,6 +477,14 @@ fij_Latn:
   name: Fijian
   glottocode: fiji1243
   iso_639_3: fij
+  iso_15924: Latn
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+fil_Latn:
+  name: Filipino
+  glottocode: fili1244
+  iso_639_3: fil
   iso_15924: Latn
   datasets:
     flores_dev: ok
@@ -531,6 +531,14 @@ fuv_Latn:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
+gaz_Latn:
+  name: West Central Oromo
+  glottocode: west2721
+  iso_639_3: gaz
+  iso_15924: Latn
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
 gla_Latn:
   name: Scottish Gaelic
   glottocode: scot1245
@@ -759,24 +767,6 @@ kat_Geor:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-knc_Arab:
-  name: Central Kanuri (Arabic script)
-  glottocode: cent2050
-  iso_639_3: knc
-  iso_15924: Arab
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
-    seed: ok
-knc_Latn:
-  name: Central Kanuri (Latin script)
-  glottocode: cent2050
-  iso_639_3: knc
-  iso_15924: Latn
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
-    seed: ok
 kaz_Cyrl:
   name: Kazakh
   glottocode: kaza1248
@@ -798,6 +788,14 @@ kea_Latn:
   glottocode: kabu1256
   iso_639_3: kea
   iso_15924: Latn
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+khk_Cyrl:
+  name: Halh Mongolian
+  glottocode: halh1238
+  iso_639_3: khk
+  iso_15924: Cyrl
   datasets:
     flores_dev: ok
     flores_devtest: ok
@@ -849,19 +847,37 @@ kmr_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-ktu_Latn:
-  name: Kituba (DRC)
-  glottocode: kitu1246
-  iso_639_3: ktu
+knc_Arab:
+  name: Central Kanuri (Arabic script)
+  glottocode: cent2050
+  iso_639_3: knc
+  iso_15924: Arab
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+    seed: ok
+knc_Latn:
+  name: Central Kanuri (Latin script)
+  glottocode: cent2050
+  iso_639_3: knc
   iso_15924: Latn
   datasets:
     flores_dev: ok
     flores_devtest: ok
+    seed: ok
 kor_Hang:
   name: Korean
   glottocode: kore1280
   iso_639_3: kor
   iso_15924: Hang
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+ktu_Latn:
+  name: Kituba (DRC)
+  glottocode: kitu1246
+  iso_639_3: ktu
+  iso_15924: Latn
   datasets:
     flores_dev: ok
     flores_devtest: ok
@@ -882,14 +898,6 @@ lij_Latn:
     flores_dev: ok
     flores_devtest: ok
     seed: ok
-fil_Latn:
-  name: Filipino
-  glottocode: fili1244
-  iso_639_3: fil
-  iso_15924: Latn
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
 lim_Latn:
   name: Limburgish
   glottocode: limb1263
@@ -1047,14 +1055,6 @@ mkd_Cyrl:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-plt_Latn:
-  name: Plateau Malagasy
-  glottocode: plat1254
-  iso_639_3: plt
-  iso_15924: Latn
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
 mlt_Latn:
   name: Maltese
   glottocode: malt1254
@@ -1079,14 +1079,6 @@ mni_Mtei:
   iso_15924: Mtei
   datasets:
     flores_dev: ok
-khk_Cyrl:
-  name: Halh Mongolian
-  glottocode: halh1238
-  iso_639_3: khk
-  iso_15924: Cyrl
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
 mos_Latn:
   name: Mossi
   glottocode: moss1236
@@ -1186,14 +1178,6 @@ oci_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-gaz_Latn:
-  name: West Central Oromo
-  glottocode: west2721
-  iso_639_3: gaz
-  iso_15924: Latn
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
 ory_Orya:
   name: Odia
   glottocode: oriy1255
@@ -1226,11 +1210,28 @@ pap_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+pbt_Arab:
+  name: Southern Pashto
+  glottocode: sout2649
+  iso_639_3: pbt
+  iso_15924: Arab
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+    seed: ok
 pes_Arab:
   name: Western Persian
   glottocode: west2369
   iso_639_3: pes
   iso_15924: Arab
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+plt_Latn:
+  name: Plateau Malagasy
+  glottocode: plat1254
+  iso_639_3: plt
+  iso_15924: Latn
   datasets:
     flores_dev: ok
     flores_devtest: ok
@@ -1254,15 +1255,6 @@ prs_Arab:
   name: Dari
   glottocode: dari1249
   iso_639_3: prs
-  iso_15924: Arab
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
-    seed: ok
-pbt_Arab:
-  name: Southern Pashto
-  glottocode: sout2649
-  iso_639_3: pbt
   iso_15924: Arab
   datasets:
     flores_dev: ok
@@ -1489,6 +1481,24 @@ tam_Taml:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+taq_Latn:
+  name: Tamasheq (Latin script)
+  glottocode: tama1365
+  iso_639_3: taq
+  iso_15924: Latn
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+    seed: ok
+taq_Tfng:
+  name: Tamasheq (Tifinagh script)
+  glottocode: tama1365
+  iso_639_3: taq
+  iso_15924: Tfng
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+    seed: ok
 tat_Cyrl:
   name: Tatar
   glottocode: tata1255
@@ -1529,24 +1539,6 @@ tir_Ethi:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-taq_Latn:
-  name: Tamasheq (Latin script)
-  glottocode: tama1365
-  iso_639_3: taq
-  iso_15924: Latn
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
-    seed: ok
-taq_Tfng:
-  name: Tamasheq (Tifinagh script)
-  glottocode: tama1365
-  iso_639_3: taq
-  iso_15924: Tfng
-  datasets:
-    flores_dev: ok
-    flores_devtest: ok
-    seed: ok
 tpi_Latn:
   name: Tok Pisin
   glottocode: tokp1240
@@ -1598,6 +1590,14 @@ tur_Latn:
 twi_Latn_akua1239:
   name: Akuapem Twi
   glottocode: akua1239
+  iso_639_3: twi
+  iso_15924: Latn
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+twi_Latn_asan1239:
+  name: Asante Twi
+  glottocode: asan1239
   iso_639_3: twi
   iso_15924: Latn
   datasets:
@@ -1733,4 +1733,3 @@ zul_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-
