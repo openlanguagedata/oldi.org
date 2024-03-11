@@ -48,7 +48,7 @@ afr_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-ajp_Arab:
+apc_Arab_sout3123:
   name: South Levantine Arabic
   glottocode: sout3123
   iso_639_3: ajp
@@ -56,14 +56,14 @@ ajp_Arab:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-aka_Latn:
-  name: Akan
-  glottocode: akan1250
-  iso_639_3: aka
+twi_Latn_asan1239:
+  name: Asante Twi
+  glottocode: asan1239
+  iso_639_3: twi
   iso_15924: Latn
   datasets:
-    flores_dev: warn
-    flores_devtest: warn
+    flores_dev: ok
+    flores_devtest: ok
 als_Latn:
   name: Tosk Albanian
   glottocode: tosk1239
@@ -80,7 +80,7 @@ amh_Ethi:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-apc_Arab:
+apc_Arab_nort3139:
   name: North Levantine Arabic
   glottocode: nort3139
   iso_639_3: apc
@@ -449,7 +449,7 @@ epo_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-est_Latn:
+ekk_Latn:
   name: Estonian
   glottocode: kesk1234
   iso_639_3: ekk
@@ -563,7 +563,7 @@ gom_Deva:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-grn_Latn:
+gug_Latn:
   name: Paraguayan Guaraní
   glottocode: para1311
   iso_639_3: gug
@@ -849,7 +849,7 @@ kmr_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-kon_Latn:
+ktu_Latn:
   name: Kituba (DRC)
   glottocode: kitu1246
   iso_639_3: ktu
@@ -1243,8 +1243,8 @@ pol_Latn:
     flores_dev: ok
     flores_devtest: ok
 por_Latn:
-  name: Portuguese
-  glottocode: port1283
+  name: Brazilian Portuguese
+  glottocode: braz1246
   iso_639_3: por
   iso_15924: Latn
   datasets:
@@ -1414,8 +1414,8 @@ sot_Latn:
     flores_dev: ok
     flores_devtest: ok
 spa_Latn:
-  name: Spanish
-  glottocode: stan1288
+  name: Latin American Spanish
+  glottocode: amer1254
   iso_639_3: spa
   iso_15924: Latn
   datasets:
@@ -1595,9 +1595,9 @@ tur_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
-twi_Latn:
-  name: Twi
-  glottocode: twii1234
+twi_Latn_akua1239:
+  name: Akuapem Twi
+  glottocode: akua1239
   iso_639_3: twi
   iso_15924: Latn
   datasets:
