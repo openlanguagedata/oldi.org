@@ -12,9 +12,9 @@ BUILD_ROOT = Path("./build")
 shutil.rmtree(BUILD_ROOT, ignore_errors=True)
 shutil.copytree(STATIC_ROOT, BUILD_ROOT)
 
-with open(BUILD_ROOT / "languages.yaml") as f:
+with open("languages.yaml") as f:
     languages = yaml.safe_load(f)
-
+shutil.copy("languages.yaml", BUILD_ROOT)
 
 env = Environment(loader=PackageLoader("build"), autoescape=select_autoescape())
 
