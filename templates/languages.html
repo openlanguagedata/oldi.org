@@ -21,9 +21,9 @@
     <tbody>
         {% for lang in languages -%}
         <tr>
-            <td><code>{{ lang.iso_639_3 }}</code></td>
+            <td><code><a href="https://iso639-3.sil.org/code/{{ lang.iso_639_3 }}">{{ lang.iso_639_3 }}</a></code></td>
             <td><code>{{ lang.iso_15924 }}</code></td>
-            <td>{% if lang.glottocode %}<code>{{ lang.glottocode }}</code>{% endif %}</td>
+            <td>{% if lang.glottocode %}<code><a href="https://glottolog.org/resource/languoid/id/{{ lang.glottocode }}">{{ lang.glottocode }}</a></code>{% endif %}</td>
             <td>{{ lang.name }}</td>
             <td>
                 {%- if lang.datasets.flores_dev == "ok" and lang.datasets.flores_devtest == "ok" -%}

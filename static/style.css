@@ -87,7 +87,8 @@ img.inline { vertical-align: text-top; height: 2ex; }
 
 a { color: var(--blue);  }
 a:hover { text-decoration: none; }
-th a { color: black; }
+
+th a, code a { color: black; }
 
 code {
     font-family: 'Courier New', Courier, monospace;
