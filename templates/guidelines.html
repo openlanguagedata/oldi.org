@@ -7,67 +7,65 @@
 
 <p>Thank you for your interest in contributing to the OLDI datasets!</p>
 
-<p>To ensure high-quality contributions, please follow the steps in the <a href="#_checklist">checklist</a> below and see the rest of this page for more information.</p>
+<p>To ensure high-quality contributions, please follow the steps in the <a href="#checklist">checklist</a> below and see the rest of this page for more information.</p>
 
-<h2 id="#_checklist">Language data release checklist</h2>
+<h2 id="checklist">Language data release checklist</h2>
 
 <ul class="checklist">
-    <li><input type="checkbox"> Decide on your <a href="#_contribution-type">type of contribution</a></li>
-    <li><input type="checkbox"> Open an issue in the <a href="/#datasets">relevant dataset repository</a> to discuss your proposed contribution.</li>
+    <li><input type="checkbox"> Decide on your <a href="#contribution-type">type of contribution</a>.</li>
+    <li><input type="checkbox"> Email the organisers at <a href="mailto:info@oldi.org">info@oldi.org</a> to discuss your proposed contribution.</li>
     <li><input type="checkbox"> Identify the right <a href="#language-codes">language code</a> for your contribution.</li>
-    <li><input type="checkbox"> Fill out a <a href="#data-card">data card</a>.</li>
-    <li><input type="checkbox"> Ensure all translators have acknowledged the <a href="#translation-guidelines">translation guidelines</a> and data card.</li>
+    <li><input type="checkbox"> Fill out a <a href="#data-card">data card</a> and ensure all people participating in data collection or annotation have acknowledged its contents.</li>
+    <li><input type="checkbox"> For translation projects, ensure all translators have acknowledged the <a href="#translation-guidelines">translation guidelines</a>. For monolingual projects, ensure all contributors have acknowledged the <a href="#monolingual-guidelines">monolingual contribution guidelines</a>.</li>
     <li><input type="checkbox"> Deliver the data!</li>
 </ul>
 
-<h2 id="#_contribution-type">Types of contribution</h2>
+<h2 id="contribution-type">Types of contribution</h2>
 
 <p>There are three main types of contributions:</p>
 
 <ol>
     <li><strong>Fixes to existing data:</strong> in case of incorrect or imcomplete exisiting translations.</li>
     <li><strong>Completely new translations:</strong> typically involves starting from the original English data and having it translated by qualified, native speakers of the target language (see <a href="#translation-guidelines">translation guidelines</a>).</li>
-    <li><strong>Other contributions:</strong> for example, new monolingual datasets.</li>
+    <li><strong>Other contributions:</strong> for example, new monolingual datasets (see <a href="#monolingual-guidelines">monolingual contribution guidelines</a>).</li>
 </ol>
 
-<p>In each case, please open an issue in the <a href="/#datasets">relevant dataset repository</a>. Thisensures nobody else is already working on the same task and allows the community to better coordinate work.</p>
+<p>In each case, before starting work please make sure to email the organisers at <a href="mailto:info@oldi.org">info@oldi.org</a>. This ensures nobody else is already working on the same task and allows the community to better coordinate work.</p>
 
 <h2 id="language-codes">Language codes</h2>
 
-<p>We use standardized language codes throughout OLDI. These are made up of two mandatory parts plus an optional third part, separated by underscores:</p>
+<p>We use standardized language codes throughout OLDI. These are made up of three parts:</p>
 
 <ul>
     <li><strong>A language subtag:</strong> we use <a href="https://iso639-3.sil.org/code_tables/639/data">ISO 639-3</a> language codes. Macrolanguage codes must not be used if a more specific code exists: e.g. please use <code>cmn</code>, <code>yue</code>, <code>wuu</code>, etc. rather than <code>zho</code>.</li>
     <li><strong>A script subtag:</strong> we use <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924</a> script codes.</li>
-    <li><strong>A language variant subtag:</strong> (optional) we use an additional subtag to disambiguate cases where multiple variants are present in the OLDI datasets. This can be a geographic code (<a href="https://www.iso.org/obp/ui/#search">3166-1 alpha-2</a>for countries or UN M.49 for regions), an IANA variant subtag, or a <a href="https://glottolog.org/glottolog/glottologinformation">Glottocode</a></li>
+    <li><strong>A language variety subtag:</strong> to identify the specific language variety we use <a href="https://glottolog.org/glottolog/glottologinformation">Glottocodes</a>, which have the advantage of being stable and of allowing the identification of languages (or languoids) at various levels of granularity.</li>
 </ul>
 
-<p>Example: <code>eng_Latn_GB</code> designates British English.</p>
+<p><strong><img src="/example.svg" class="inline" alt=""> Example</strong>: <code>apc_Arab_sout3123</code> is South Levantine Arabic written in the Arabic script.</p>
 
 <h2 id="data-card">Data card</h2>
-
-<p></p>
 
 <p>For new data, we collect precise information about the target language variety as well as the translation workflow. Please use the following Markdown template to provide this information.</p>
 
 <h3>Template</h3>
 
-<div class="box code"><strong># Data card</strong>
+<div class="code box"><strong># Data card</strong>
 
-    <strong>## Data description</strong>
+    <strong>## Description</strong>
 
     <em>&lt;!-- A concise description of the data associated with this card. --&gt;</em>
 
-    FLORES+ dev in Luxemburgish
+    FLORES+ dev set in Luxemburgish
 
-    <strong>## Data license</strong>
+    <strong>## License</strong>
 
-    <em>&lt;!-- New data contributions must be released under the same license as the parent dataset. Please specify the license using an <a href="https://spdx.org/licenses/">SPDX license identifier</a>. --&gt;</em>
+    <em>&lt;!-- Contributions to existing datasets must be released under the same license as the parent dataset. For completely new contributions, we encourage the use of an open license. At a minimum, data should be made available for research use. Please specify the license using an <a href="https://spdx.org/licenses/">SPDX license identifier</a>. --&gt;</em>
 
     CC-BY-SA-4.0
 
-    <strong>## Data attribution</strong>
-""
+    <strong>## Attribution</strong>
+
     <em>&lt;!-- Who should be credited for creating this dataset? Feel free to include citation data in BibTeX format. --&gt;</em>
 
     ```bibtex
@@ -94,32 +92,39 @@
 
     <em>&lt;!-- If this language is assigned an <a href="https://iso639-3.sil.org/code_tables/639/data">ISO 639-3</a> individual language code (not a macrolanguage code), specify it here. If this language is assigned a <a href="https://glottolog.org/glottolog/glottologinformation">Glottocode</a>, please specify it here. --&gt;</em>
 
-    <strong>*</strong> ISO 639-3: ltz
-    <strong>*</strong> Glottocode: luxe1243
+    * ISO 639-3: ltz
+    * Glottocode: luxe1243
 
     <strong>## Script</strong>
 
     <em>&lt;!-- What script is this language written in? Please specify it using an <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924</a> code.--&gt;</em>
 
-    <strong>*</strong> ISO 15924: Latn
+    * ISO 15924: Latn
 
     <strong>## Dialectal and orthographic information</strong>
 
     <em>&lt;!-- Please provide information about dialectal and orthographic variation. Is this language likely to differ significantly between the communities or regions in which it is spoken/written? If applicable, specify which dialect(s) and orthography your contribution targets. --&gt;</em>
 
+    <br>
+
     <strong>## Additional language information</strong>
 
-    <em>&lt;!-- Any relevant additional information on the language, such as: a list of reference publications and software (dictionaries, grammars, spellcheckers) which target the language – and, if applicable, dialect(s) – of your contribution. --&gt;</em>
+    <em>&lt;!-- Any relevant additional information on the language, such as:
+        * A list of reference publications and software (dictionaries, grammars, spellcheckers).
+        * If applicable, any additional information about dialectal variation that is not captured by the Glottocode.
+        * If relevant, the orthography used in your contribution. --&gt;</em>
 
-    <strong>## Translation workflow</strong>
+    <br>
 
-    <em>&lt;!-- What workflow was followed in translating this dataset? Relevant information includes: what language the content was translated from, the number of translators, aggregate translator information (how many were native speakers in the target language, how many were highly proficient in the target languages, how many had professional translation experience), was any fraction of the data checked independently by third parties, etc. --&gt;</em>
+    <strong>## Workflow</strong>
+
+    <em>&lt;!-- What workflow was followed in creating this dataset? E.g., for a translated dataset, relevant information includes: what language the content was translated from, the number of translators, aggregate translator information (how many were native speakers in the target language, how many were highly proficient in the target languages, how many had professional translation experience), was any fraction of the data checked independently by third parties, etc. --&gt;</em>
 
     Data was translated from English by 5 translators, all native speakers of the target language and highly proficient in English (at C2 level of the European Language Framework). All translators were either professional translators or had relevant qualifications (university degrees in Translation and Interpreting or Linguistics). 100% of the data was checked by one more independent translator.
 
     <strong>## Additional guidelines</strong>
 
-    <em>&lt;!-- Were any additional guidelines provided to or agreed upon by translators? Examples might include style guidelines, the use of particular grammatical forms or sentence structures, specific spelling or punctuation rules to be followed. --&gt;</em>
+    <em>&lt;!-- Were any additional guidelines provided to or agreed upon? Examples might include style guidelines, the use of particular grammatical forms or sentence structures, specific spelling or punctuation rules to be followed. --&gt;</em>
 
 </div>
 
@@ -130,6 +135,11 @@
 <h3>Important note</h3>
 
 <p>Your translations will be used to help train or evaluate machine translation engines. For this reason, this project requires <strong>human translation</strong>.</p>
+
+<ul>
+    <li>If you are translating data to be used for evaluation purposes, such as for FLORES+, using or even referencing machine translation output is not allowed (this includes post-editing).</li>
+    <li>If you are translating data to be used for training purposes, such as Seed, the use of post-edited machine translated content is allowed, provided all data is manually verified and edited where necessary. <strong><img class="inline" src="/caution.svg" alt="[Caution]"> Note</strong> that some machine translation services – including DeepL, Google Translate, and ChatGPT – prohibit the use of their output for training other translation or AI models, so their use is not permitted.</li>
+</ul>
 
 <h3>General guidelines</h3>
 
@@ -169,162 +179,20 @@
     </li>
 </ol>
 
+<h2 id="monolingual-guidelines">Monolingual contribution guidelines</h2>
 
-
-<!-- <p>Thank you for your interest in contributing to the OLDI datasets.</p>
-
-<p>Wheter you plan on contributing fixes to existing data or completely new translations, please open an issue in the <a href="/#datasets">relevant dataset repository</a>, to ensure nobody else is already working on the same task. This will also allow the community to better coordinate work.</p>
-
-<p>Typically, contributing a new translation involves starting from the original English data and having it translated by qualified, native speakers of the target language. We also ask contributors to fill out a <a href="#data-card">data card</a> containing details about the language being targeted, as well as information on how the translation was carried out. Please see the next section for more information.</p>
-
-<h2>Language data release checklist</h2>
-
-<p>Here are the steps which should be followed for all new contributions:</p>
-
-<ul class="checklist">
-    <li><input type="checkbox"> Open an issue in the <a href="/#datasets">relevant dataset repository</a> to discuss your proposed contribution.</li>
-    <li><input type="checkbox"> Identify the right <a href="#language-codes">language code</a> for your contribution.</li>
-    <li><input type="checkbox"> Fill out a <a href="#data-card">data card</a>.</li>
-    <li><input type="checkbox"> Ensure that all translators have acknowledged the contents of the <a href="#translation-guidelines">translation guidelines</a> and <a href="#data-card">data card</a>.</li>
-    <li><input type="checkbox"> Deliver the data.</li>
-</ul>
-
-<h2 id="language-codes">Language codes</h2>
-
-<p>We make use of standardized language codes such as <code>eng_Latn</code>. These codes are used throughout our projects to identify languages, as well as in filenames to indicate the language of their contents:</p>
-
-<ul>
-    <li>Language codes are comprised of two mandatory parts, and an optional third part:</li>
-    <ul>
-        <li>A language subtag.</li>
-        <li>A script subtag.</li>
-        <li>An optional language variant subtag.</li>
-    </ul>
-    <li>For the language subtag, we use <a href="https://iso639-3.sil.org/code_tables/639/data">ISO 639-3</a> language codes. Macrolanguage codes must not be used if a more specific code exists, e.g. please use <code>cmn</code>, <code>yue</code>, <code>wuu</code>, etc. rather than the generic uninformative code <code>zho</code>.</li>
-    <li>For the script subtag, we use <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924</a> script codes.</li>
-    <li>The language variant subtag is optional and can be used to disambiguate cases where multiple variants are present in the OLDI datasets. This can be a geographic code (ISO 3166-1 alpha-2 for countries or UN M.49 for regions), an IANA variant subtag, or a <a href="https://glottolog.org/glottolog/glottologinformation">Glottocode</a>.</li>
-</ul>
-
-<h2 id="data-card">Data card</h2>
-
-<p>For new data, we collect precise information about the targeted language and dialect, as well as the translation workflow that was followed. Please use the following Markdown template to provide this information.</p>
-
-<h3>Template</h3>
-
-<div class="box code"><strong># Data card</strong>
-
-    <strong>## Data description</strong>
-
-    <em>&lt;!-- Concisely describe the data associated with this card, for example: --&gt;</em>
-
-    FLORES+ dev in Luxemburgish
-
-    <strong>## Data license</strong>
-
-    <em>&lt;!-- New data contributions must be released under the same license as the parent dataset. Please specify the license using an <a href="https://spdx.org/licenses/">SPDX license identifier</a>. --&gt;</em>
-
-    CC-BY-SA-4.0
-
-    <strong>## Data attribution</strong>
-""
-    <em>&lt;!-- Who should be credited for creating this dataset? Feel free to include citation data in BibTeX format. --&gt;</em>
-
-    ```bibtex
-    @article{myarticle,
-    &nbsp;&nbsp;title={Something},
-    &nbsp;&nbsp;author={Somebody},
-    &nbsp;&nbsp;year={2024},
-    }
-    ```
-
-    <strong>## Language name</strong>
-
-    <em>&lt;!-- What is the language endonym, i.e. the language name in the language itself? You may provide several names, e.g.: --&gt;</em>
-
-    Lëtzebuergesch
-
-    <strong>## Language name in English</strong>
-
-    <em>&lt;!-- What is the language name in English? You may provide several names, e.g.: --&gt;</em>
-
-    Luxembourgish, Luxemburgish, Luxembourgian
-
-    <strong>## Language codes</strong>
-
-    <em>&lt;!-- If this language is assigned an <a href="https://iso639-3.sil.org/code_tables/639/data">ISO 639-3</a> individual language code (not a macrolanguage code), specify it here. If this language is assigned a <a href="https://glottolog.org/glottolog/glottologinformation">Glottocode</a>, please specify it here. For example: --&gt;</em>
-
-    <strong>*</strong> ISO 639-3: ltz
-    <strong>*</strong> Glottocode: luxe1243
-
-    <strong>## Script</strong>
-
-    <em>&lt;!-- What script is this language written in? Please specify it using an <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924</a> code, for example: --&gt;</em>
-
-    <strong>*</strong> ISO 15924: Latn
-
-    <strong>## Dialectal and orthographic information</strong>
-
-    <em>&lt;!-- Please provide information about dialectal and orthographic variation. Is this language likely to differ significantly between the communities or regions in which it is spoken/written? If applicable, specify which dialect(s) and orthography your contribution targets. --&gt;</em>
-
-    <strong>## Additional language information</strong>
-
-    <em>&lt;!-- Any relevant additional information on the language, such as: a list of reference publications and software (dictionaries, grammars, spellcheckers) which target the language – and, if applicable, dialect(s) – of your contribution. --&gt;</em>
-
-    <strong>## Translation workflow</strong>
-
-    <em>&lt;!-- What workflow was followed in translating this dataset? Relevant information includes: what language the content was translated from, the number of translators, aggregate translator information (how many were native speakers in the target language, how many were highly proficient in the target languages, how many had professional translation experience), was any fraction of the data checked independently by third parties, etc. Example: --&gt;</em>
-
-    Data was translated from English by 5 translators, all native speakers of the target language and highly proficient in English (at C2 level of the European Language Framework). All translators were either professional translators or had relevant qualifications (university degrees in Translation and Interpreting or Linguistics). 100% of the data was checked by one more independent translator.
-
-    <strong>## Additional guidelines</strong>
-
-    <em>&lt;!-- Were any additional guidelines provided to or agreed upon by translators? Examples might include style guidelines, the use of particular grammatical forms or sentence structures, specific spelling or punctuation rules to be followed, etc. --&gt;</em>
-
-</div>
-
-<h2 id="translation-guidelines">Translation guidelines</h2>
-
-<p>These translation guidelines must be acknlowedge by all translators who will be contributing data.</p>
+<p>All contributors must acknowledge the following guidelines.</p>
 
 <h3>Important note</h3>
 
-<p>Your translations will be used to help train or evaluate Machine Translation engines. For this reason, this project requires Human Translation.</p>
+<p>The goal of this effort is the collection of high-quality textual monolingual data, for the purposes of training language identification systems, language models and other related tools. <strong>Synthetic data is not allowed</strong>. Examples of disallowed synthetic data include machine-translated content, LLM output, and text generated from templates.</p>
 
 <h3>General guidelines</h3>
 
 <ol>
-    <li>You will be translating sentences coming from different sources. In some cases, a link to the source document might be provided to give you more context. If available, please refer to it.</li>
-    <li>Do not convert any units of measurement. Translate them exactly as noted in the source content.</li>
-    <li>When translating, please maintain the same tone used in the source document. For example, encyclopedic content coming from sources like Wikipedia should be translated using a formal tone.</li>
-    <li>Provide fluent translations without deviating too much from the source structure. Only allow necessary changes.</li>
-    <li>Do not expand or replace information compared to what is present in the source documents. Do not add any explanatory or parenthetical information, definitions, etc.</li>
-    <li>Do not ignore any meaningful text that was present in the source.</li>
-    <li>In case of multiple possible translations, please pick the one that makes the most sense (e.g., for gender concordance, cultural fit in the target language, level of formality, etc.).</li>
-    <li>Translations must be faithful to the source in terms of pragmatics such as (if applicable) level of hedging/modality, sentiment and its intensity, negation, speech effects (disfluencies), etc.</li>
-    <li>For proper nouns and common abbreviations, please see the guidelines on Named Entities below.</li>
-    <li>Idiomatic expressions should not be translated word for word. Use an equivalent idiom, if one exists. If no equivalent idiom exists, use an idiom of similar meaning. If no similar expressions exist in the target language, paraphrase the idiom such that the meaning is retained in the target language.</li>
-    <li>When a pronoun to be translated is ambiguous (for instance, when it could be interpreted as either <em>him/her</em> or <em>he/she</em>), opt for gender neutral pronouns (such as <em>them/they</em>) if those exist in the target language. However, when a pronoun to be translated is clearly marked for gender, you should follow the source material and continue to mark for gender.</li>
+    <li>All contributed data must be human-generated. Surface changes that are mechanical in nature (such as certain types of transliteration) may be performed with the aid of automated systems, provided this is clearly documented.</li>
+    <li>Clearly identify the provenance of the data. In many cases, this may be done by providing a URL or a bibliographic reference.</li>
+    <li>Ensure the data is in the claimed language and free of issues such as encoding problems. If at all possible, this should be done by having one or more native speakers manually check a sufficiently large representative sample of the whole dataset.</li>
 </ol>
-
-<h3>Named entities</h3>
-
-<p>Named Entities are people, places, organisations, etc., that are commonly referred to using a proper noun. This section provides guidance on how to handle Named Entities. Please review the following guidelines carefully:</p>
-
-<ol>
-    <li>
-        If there is a commonly used term in the target language for the Named Entity:
-        <ol>
-            <li>If the most commonly used term is the same as in the source language, then keep it as it is.</li>
-            <li>If the most commonly used term is a translation or a transliteration, then use that.</li>
-        </ol>
-    </li>
-    <li>
-        If there is no commonly used term:
-        <ol>
-            <li>If possible, a transliteration of the original term should be used.</li>
-            <li>If a transliteration would not be commonly understood in the context, and the source term would be more acceptable, you may retain the original term.</li>
-        </ol>
-    </li>
-</ol> -->
 
 {% endblock %}
