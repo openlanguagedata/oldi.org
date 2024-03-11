@@ -15,7 +15,7 @@
     <li><input type="checkbox"> Decide on your <a href="#contribution-type">type of contribution</a>.</li>
     <li><input type="checkbox"> Email the organisers at <a href="mailto:info@oldi.org">info@oldi.org</a> to discuss your proposed contribution.</li>
     <li><input type="checkbox"> Identify the right <a href="#language-codes">language code</a> for your contribution.</li>
-    <li><input type="checkbox"> Fill out a <a href="#data-card">data card</a> and ensure all people participating in data collection or annotation have acknowledged its contents.</li>
+    <li><input type="checkbox"> Fill out a <a href="#dataset-card">dataset card</a> and ensure all people participating in data collection or annotation have acknowledged its contents.</li>
     <li><input type="checkbox"> For translation projects, ensure all translators have acknowledged the <a href="#translation-guidelines">translation guidelines</a>. For monolingual projects, ensure all contributors have acknowledged the <a href="#monolingual-guidelines">monolingual contribution guidelines</a>.</li>
     <li><input type="checkbox"> Deliver the data!</li>
 </ul>
@@ -44,13 +44,13 @@
 
 <p><strong><img src="/example.svg" class="inline" alt=""> Example</strong>: <code>apc_Arab_sout3123</code> is South Levantine Arabic written in the Arabic script.</p>
 
-<h2 id="data-card">Data card</h2>
+<h2 id="dataset-card">Dataset card</h2>
 
 <p>For new data, we collect precise information about the language variety as well as the translation workflow. Please use the following Markdown template to provide this information.</p>
 
 <h3>Template</h3>
 
-<div class="code box"><strong># Data card</strong>
+<div class="code box"><strong># Dataset card</strong>
 
     <strong>## Description</strong>
 
@@ -76,30 +76,16 @@
     }
     ```
 
-    <strong>## Language name</strong>
-
-    <em>&lt;!-- What is the language endonym, i.e. the language name in the language itself? You may provide several names. --&gt;</em>
-
-    Lëtzebuergesch
-
-    <strong>## Language name in English</strong>
-
-    <em>&lt;!-- What is the language name in English? You may provide several names. --&gt;</em>
-
-    Luxembourgish, Luxemburgish, Luxembourgian
-
     <strong>## Language codes</strong>
 
-    <em>&lt;!-- If this language is assigned an <a href="https://iso639-3.sil.org/code_tables/639/data">ISO 639-3</a> individual language code (not a macrolanguage code), specify it here. If this language is assigned a <a href="https://glottolog.org/glottolog/glottologinformation">Glottocode</a>, please specify it here. --&gt;</em>
+    <em>&lt;!--
+    * If this language is assigned an <a href="https://iso639-3.sil.org/code_tables/639/data">ISO 639-3</a> individual language code (not a macrolanguage code), specify it here.
+    * Please specify the script this language is written in using an <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924</a> code.
+    * If this language is assigned a <a href="https://glottolog.org/glottolog/glottologinformation">Glottocode</a>, please specify it here. --&gt;</em>
 
     * ISO 639-3: ltz
-    * Glottocode: luxe1243
-
-    <strong>## Script</strong>
-
-    <em>&lt;!-- What script is this language written in? Please specify it using an <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924</a> code.--&gt;</em>
-
     * ISO 15924: Latn
+    * Glottocode: luxe1243
 
     <strong>## Additional language information</strong>
 
@@ -118,7 +104,7 @@
 
     <strong>## Additional guidelines</strong>
 
-    <em>&lt;!-- Were any additional guidelines provided to or agreed upon? Examples might include style guidelines, the use of particular grammatical forms or sentence structures, specific spelling or punctuation rules to be followed. --&gt;</em>
+    <em>&lt;!-- Were any additional guidelines agreed upon? Examples might include style guidelines, the use of particular grammatical forms or sentence structures, specific spelling or punctuation rules to be followed, etc. --&gt;</em>
 
 </div>
 
