@@ -944,8 +944,8 @@ khk_Cyrl:
     flores_dev: ok
     flores_devtest: ok
 khm_Khmr:
-  display_name: Khmer
-  eng_name: Khmer
+  display_name: Khmer (Central)
+  eng_name: Central Khmer
   iso_639_3: khm
   iso_15924: Khmr
   glottocode: cent1989
@@ -954,7 +954,9 @@ khm_Khmr:
     flores_devtest: ok
 kik_Latn:
   display_name: Kikuyu
-  eng_name: Kikuyu
+  eng_name:
+  - Kikuyu
+  - Gikuyu
   iso_639_3: kik
   iso_15924: Latn
   glottocode: kiku1240
@@ -1455,6 +1457,7 @@ pol_Latn:
 por_Latn:
   display_name: Portuguese (Brazilian)
   eng_name: Brazilian Portuguese
+  endonym: português brasileiro
   iso_639_3: por
   iso_15924: Latn
   glottocode: braz1246
