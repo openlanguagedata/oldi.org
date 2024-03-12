@@ -6,6 +6,7 @@
     --blueshadow: #597DB6;
     --lightgrey: hsla(0, 0%, 94%, 1);
     --grey: hsla(0, 0%, 92%, 1);
+    --hl: #ebfafa;
 }
 
 html {
@@ -82,6 +83,7 @@ p {
 }
 
 img.i { height: 2ex; vertical-align: middle; }
+img.inline { vertical-align: text-top; height: 2ex; }
 
 a { color: var(--blue);  }
 a:hover { text-decoration: none; }
@@ -161,17 +163,18 @@ table.progress tr > td:first-child {
 }
 
 div.box {
-    margin: 1em auto;
     width: fit-content;
     border-radius: 10px;
-    padding: 1em;
-    background-color: var(--grey);
     border: 1px dashed black;
+    background-color: var(--grey);
+    padding: 1em;
+    margin: 1em auto;
 }
 
 div.code {
     white-space: pre-line;
     font-family: 'Courier New', Courier, monospace;
+    background-color: var(--grey);
 }
 
 div.code em { opacity: 0.5; }
