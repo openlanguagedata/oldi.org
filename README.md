@@ -15,10 +15,10 @@ A utility script `sort_languages_yaml.py` is provided to help keep the YAML file
 
 ### Local builds
 
-For local builds, first install the required packages:
+For local builds, first install the required packages, including the development dependencies:
 ```
 pip install -r requirements.txt
-pip install oyaml
+pip install -r requirements-dev.txt
 ```
 
 To build content and spin up a local HTTP server:

@@ -1,0 +1,2 @@
+oyaml==1.0
+py-markdown-table==0.4

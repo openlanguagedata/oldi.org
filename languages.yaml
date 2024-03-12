@@ -1251,7 +1251,7 @@ mlt_Latn:
 mni_Beng:
   display_name: Meitei (Manipuri, Bengali script)
   eng_name: Meitei (Manipuri)
-  endonym:  মৈতৈলোন
+  endonym: মৈতৈলোন
   iso_639_3: mni
   iso_15924: Beng
   glottocode: mani1292
