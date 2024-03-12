@@ -11,8 +11,6 @@ The build process is straightforward:
 2. We copy all static content in `static/` to the build directory.
 3. We compile all templates in `templates/` to the build directory.
 
-A utility script `sort_languages_yaml.py` is provided to help keep the YAML file sorted by key.
-
 ### Local builds
 
 For local builds, first install the required packages, including the development dependencies:
@@ -27,3 +25,11 @@ python build.py && python -m http.server --directory build
 ```
 
 This command should be re-run when the source is changed. TODO: auto-reload.
+
+## Utilities
+
+The script `languages.py` can perform tasks on the YAML script.
+
+`python languages.py sort` will automatically sort and overwrite the YAML file.
+
+`python languages.py table {flores+,seed}` will print a Markdown table for a given dataset which can then be included in the README of its GitHub repo.
