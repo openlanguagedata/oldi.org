@@ -28,8 +28,8 @@ acm_Arab:
   iso_15924: Arab
   glottocode: meso1252
   datasets:
-    flores_dev: ok
-    flores_devtest: ok
+    flores_dev: warn
+    flores_devtest: warn
 acq_Arab:
   display_name: Taʽizzi-Adeni Arabic
   eng_name: Taʽizzi-Adeni Arabic
@@ -38,8 +38,8 @@ acq_Arab:
   iso_15924: Arab
   glottocode: taiz1242
   datasets:
-    flores_dev: ok
-    flores_devtest: ok
+    flores_dev: warn
+    flores_devtest: warn
 aeb_Arab:
   display_name: Tunisian Arabic
   eng_name: Tunisian Arabic
@@ -127,8 +127,8 @@ ars_Arab:
   iso_15924: Arab
   glottocode: najd1235
   datasets:
-    flores_dev: ok
-    flores_devtest: ok
+    flores_dev: warn
+    flores_devtest: warn
 ary_Arab:
   display_name: Moroccan Arabic
   eng_name: Moroccan Arabic
