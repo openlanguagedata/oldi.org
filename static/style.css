@@ -171,6 +171,11 @@ div.box {
     margin: 1em auto;
 }
 
+.hl {
+    background-color: lightgoldenrodyellow;
+    border-color: sienna;
+}
+
 div.code {
     white-space: pre-line;
     font-family: 'Courier New', Courier, monospace;
