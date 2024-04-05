@@ -1,22 +1,24 @@
 <html>
     <head lang="en">
         <meta charset="utf-8">
-        <meta property="og:site_name" content="{% block title %}OLDI – Open Language Data Initiative{% endblock %}">
+        <meta property="og:title" content="{% block title %}OLDI – Open Language Data Initiative{% endblock %}">
+        <meta property="og:image" content="https://oldi.org/og.png">
         <meta property="og:description" content="The Open Language Data Initiative (OLDI) empowers language communities around the globe to contribute to a database that drives the foundation of today’s machine translation and natural language processing work. We invite community, academic, and industry members to contribute to key datasets that are imperative to the organic expansion of language technology’s reach.">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
         <link rel="stylesheet" href="/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <title>{{ self.title() }}</title>
     </head>
     <body>
         <header>
-            <a href="/"><h1>Open Language Data Initiative</h1></a>
+            <a href="/"><h1><img src="/oldi.svg" title="L"> <span><span>Open Language</span> Data</span> Initiative</h1></a>
             <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/values.html">Values</a></li>
-                    <li><a href="/languages.html">Languages</a></li>
-                    <li><a href="/guidelines.html">Guidelines</a></li>
-                </ul>
+                <a href="/">Home</a>
+                <a href="/values.html">Values</a>
+                <a href="/languages.html">Languages</a>
+                <a href="/guidelines.html">Guidelines</a>
             </nav>
         </header>
         <main>
@@ -58,6 +60,9 @@
                 <li>Skyler Wang, UC Berkley, FAIR, Meta</li>
             </ul>
             {% endblock %}
+            <footer>
+                Open Language Data Initiative<br>
+                Logo by <a href="https://elettradeganello.com/">Elettra Deganello</a></footer>
         </main>
     </body>
 </html>
