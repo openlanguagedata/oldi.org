@@ -1,17 +1,18 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
 
 :root {
     --blue: #0F52BA;
-    --bluevar: #0F52BAF2;
-    --blueshadow: #597DB6;
-    --lightgrey: hsla(0, 0%, 94%, 1);
-    --grey: hsla(0, 0%, 92%, 1);
+    --lightblue: #a9cbff;
+    --blueshadow: #597db6;
     --hl: #ebfafa;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "IBM Plex", sans-serif;
     font-size: calc(15px + 0.2vw)/calc(1.1em + 0.2vw);
+    line-height: 1.2;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
@@ -40,40 +41,45 @@ header {
     padding: 25px 5px 15px 5px;
     margin: 0;
     text-align: center;
-    background-image: repeating-linear-gradient(45deg, var(--blue) 0px 15px, var(--bluevar) 15px 30px);
+    background-color: var(--blue);
     color: white;
     box-shadow: 0 0 8px 1px var(--blueshadow);
 
     > a {
         text-decoration: none;
         h1 {
-            color: white;
             width: 100%;
             margin-top: 0;
             margin-bottom: 10px;
+            color: white;
+            img {
+                height: 2.5ex;
+                vertical-align: text-bottom;
+            }
         }
     }
 
     nav {
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            li {
-                display: inline-block;
-                margin: 5px 10px;
-                background-color: white;
-                border-radius: 5px;
-                padding: 5px;
-                a {
-                    font-weight: bold;
-                    color: var(--blue);
-                    text-decoration: none;
-                }
-                a:hover { filter: opacity(75%); }
-            }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a {
+            font-weight: normal;
+            font-family: "IBM Plex Mono", monospace;
+            color: white;
+            text-decoration: none;
+            margin: 5px 10px;
+            display: inline-block;
         }
+        a:hover { font-weight: bold; }
+        a::before { content: "["}
+        a::after { content: "]"}
     }
+}
+
+h1, h2, h3 {
+    color: var(--blue);
+    font-family: "IBM Plex Mono", monospace;
 }
 
 p {
@@ -91,7 +97,7 @@ a:hover { text-decoration: none; }
 th a, code a { color: black; }
 
 code {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "IBM Plex Mono", monospace;
 }
 
 ul.none { list-style-type: none; padding-left: 10px; }
@@ -145,49 +151,42 @@ span[data-status] { display: inline-block; min-width: 35px; }
 
 table.progress {
     margin: 1em;
-    background-image: repeating-linear-gradient(45deg, var(--grey) 0px 15px, var(--lightgrey) 15px 30px);
-    border: 2px solid var(--grey);
-    border-radius: 20px;
+    border: 1px solid black;
     border-spacing: 3px;
 }
 table.progress td {
     height: 30px;
-    border-radius: 20px;
     padding: 0 15px;
     background-color: transparent;
 }
 
 table.progress tr > td:first-child {
-    background-image: repeating-linear-gradient(45deg, var(--blue) 0px 15px, var(--bluevar) 15px 30px);
-    border: 2px solid var(--grey);
+    background-color: var(--blue);
 }
 
 
 aside, div.box {
     width: fit-content;
-    border-radius: 10px;
-    border: 1px dashed black;
-    background-color: var(--grey);
-    padding: 1em;
-    margin: 1em auto;
-}
-
-div.box {
-    padding: 1em;
-    margin: 1em auto;
-}
-
-aside {
-    opacity: 0.7;
-    padding: 10px;
+    background-color: var(--lightblue);
+    padding: 15px;
     margin: 10px auto;
-    text-align: center;
 }
+
+aside {  text-align: center; }
 
 div.code {
     white-space: pre-line;
     font-family: 'Courier New', Courier, monospace;
-    background-color: var(--grey);
+    background-color: var(--lightblue);
 }
 
-div.code em { opacity: 0.5; }
+div.code em { opacity: 0.55; }
+
+footer {
+    margin: 30px auto 0 auto;
+    padding: 10px 10px 0 10px;
+    border-top: 1px solid #777;
+    color: #777;
+    font-size: 0.85em;
+    a { color: #777; }
+}
