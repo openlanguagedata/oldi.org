@@ -46,7 +46,7 @@
 
 <h2 id="dataset-card">Dataset card</h2>
 
-<p>For new data, we collect precise information about the language variety as well as the translation workflow. Please use the following Markdown template to provide this information.</p>
+<p>For new data, we collect precise information about the language variety, the quality assurance workflow and, where applicable, the translation workflow. Please use the following Markdown template to provide this information.</p>
 
 <h3>Template</h3>
 
@@ -92,7 +92,7 @@
     <em>&lt;!-- Any relevant additional information on the language, such as:
         * A list of reference publications and software (dictionaries, grammars, spellcheckers).
         * If applicable, any additional information about dialectal variation that is not captured by the Glottocode.
-        * If relevant, the orthography used in your contribution. --&gt;</em>
+        * If relevant, the orthography used in your contribution. --&gt;</em>&nbsp;
 
     <strong>## Workflow</strong>
 
@@ -163,7 +163,7 @@
 
 <h3>Important note</h3>
 
-<p>The goal of this effort is the collection of high-quality textual monolingual data, for the purposes of training language identification systems, language models and other related tools. <strong>Synthetic data is not allowed</strong>. Examples of disallowed synthetic data include machine-translated content, LLM output, and text generated from templates.</p>
+<p>The goal of this effort is the collection of high-quality textual monolingual data, for the purposes of training language identification systems, language models and other related tools. <strong><img class="inline" src="/caution.svg" alt="[Caution]"> Synthetic data is not allowed</strong>. Examples of disallowed synthetic data include machine-translated content, LLM output, and text generated from templates.</p>
 
 <h3>General guidelines</h3>
 
@@ -172,5 +172,73 @@
     <li>Clearly identify the provenance of the data. In many cases, this may be done by providing a URL or a bibliographic reference.</li>
     <li>Ensure the data is in the claimed language and free of issues such as encoding problems. If at all possible, this should be done by having one or more native speakers manually check a sufficiently large representative sample of the whole dataset.</li>
 </ol>
+
+<h3>Data format</h3>
+
+<ol>
+    <li>Data must be in plain text format.</li>
+    <li>Minimal markup in <a href="https://spec.commonmark.org/">Markdown format</a> may be used where applicable. Markup should be limited to italics, bold, ordered and unordered lists, inline code spans, block quotes, ATX headings (<code>#</code>, <code>##</code>). Strikethrough (<code>~~</code>), footnotes (<code>[^1]</code>) and mathematics formatting (<code>$</code> and <code>$$</code>) with <a href="https://docs.gitlab.com/ee/user/markdown.html">GitLab/GFM compatible syntax</a> may also be used.</li>
+    <li>
+        Where possible, we strongly encourage contributions of document-level data, rather than sentence-level data. Retaining the context that comes with full documents enables the development of more sophisticated models.
+        <ol>
+            <li>For document-level data, there must be one document per file. Paragraphs must be separated by two subsequent newlines.</li>
+            <li>For sentence-level data, sentences must be separated by single newlines.</li>
+        </ol>
+    </li>
+    <li>
+        A standardised set of metadata must be added in the form of a YAML front matter. The front matter must be placed at the top of each file, preceding the textual content, and must be delimited by <code>---</code>.
+        <ol>
+            <li>Analogously to a <a href="#dataset-card">dataset card</a>, the language of the data must be marked using the <code>iso_639_3</code>, <code>iso_15924</code> and <code>glottocode</code> fields under the top-level <code>language</code> key. Should this structure be too restrictive for a given dataset, e.g. for code-switched text, please reach out to the organisers at <a href="mailto:info@oldi.org">info@oldi.org</a>.</li>
+            <li>The source of the data must be specified in the <code>source</code> field. This may take the form of a URL, a bibliographic reference, or free-form text.</li>
+            <li>The license, in the form of an <a href="https://spdx.org/licenses/">SPDX license identifier</a>, must be specified in the <code>license</code> field.</li>
+            <li>The date of submission of the data must be specified in <code>YYYY-MM-DD</code> format in the <code>submission_date</code> field.</li>
+            <li>Document-level data must be marked as <code>document: true</code>, whereas sentence-level data must be marked as <code>document: false</code>.</li>
+            <li>Files that use Markdown syntax must set <code>markdown: true</code>.</li>
+        </ol>
+    </li>
+</ol>
+
+<p>The following is an example of well-formed document-level data.</p>
+
+<div class="code box"><strong>---</strong>
+<strong>language</strong>:
+&nbsp;&nbsp;<strong>iso_639_3</strong>: eng
+&nbsp;&nbsp;<strong>iso_15924</strong>: Latn
+&nbsp;&nbsp;<strong>glottocode</strong>: stan1293
+<strong>source</strong>: https://en.wikipedia.org/wiki/Generative_grammar
+<strong>license</strong>: CC-BY-SA-4.0
+<strong>submission_date</strong>: 2024-05-05
+<strong>document</strong>: true
+<strong>markdown</strong>: true
+<strong>---</strong>
+<strong># Generative grammar</strong>&nbsp;
+
+<strong>**Generative grammar**</strong> is a theoretical approach in linguistics that regards grammar as a domain-specific system of rules that generates all and only the grammatical sentences of a given language. In light of poverty of the stimulus arguments, grammar is regarded as being partly innate, the innate portion of the system being referred to as universal grammar. The generative approach has focused on the study of syntax while addressing other aspects of language including semantics, morphology, phonology, and psycholinguistics.
+
+<strong>## Frameworks</strong>
+
+There are a number of different approaches to generative grammar. Common to all is the effort to come up with a set of rules or principles that formally defines every one of the members of the set of well-formed expressions of a natural language. The term <em>_generative grammar_</em> has been associated with at least the following schools of linguistics:
+
+...
+</div>
+
+<p>The following is an example of well-formed sentence-level data.</p>
+
+<div class="code box"><strong>---</strong>
+<strong>language</strong>:
+&nbsp;&nbsp;<strong>iso_639_3</strong>: xxx
+&nbsp;&nbsp;<strong>iso_15924</strong>: Xxxx
+&nbsp;&nbsp;<strong>glottocode</strong>: xxxx1234
+<strong>source</strong>: Example sentences extracted from: A. Bloggs. 1904. Notes on Language X. Journal of Language Studies. 24-40.
+<strong>license</strong>: CC-0
+<strong>submission_date</strong>: 2024-05-05
+<strong>document</strong>: false
+<strong>markdown</strong>: false
+<strong>---</strong>
+This is a sentence.
+This is another sentence.
+This is a third sentence.
+...
+</div>
 
 {% endblock %}
