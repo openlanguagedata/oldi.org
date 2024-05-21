@@ -47,12 +47,12 @@ header {
 
     > a {
         text-decoration: none;
-        h1 {
+        & h1 {
             width: 100%;
             margin-top: 0;
             margin-bottom: 10px;
             color: white;
-            img {
+            & img {
                 height: 2.5ex;
                 vertical-align: text-bottom;
             }
@@ -63,7 +63,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        a {
+        & a {
             font-weight: normal;
             font-family: "IBM Plex Mono", monospace;
             color: white;
@@ -71,9 +71,9 @@ header {
             margin: 5px 10px;
             display: inline-block;
         }
-        a:hover { font-weight: bold; }
-        a::before { content: "["}
-        a::after { content: "]"}
+        & a:hover { font-weight: bold; }
+        & a::before { content: "["}
+        & a::after { content: "]"}
     }
 }
 
@@ -188,5 +188,5 @@ footer {
     border-top: 1px solid #777;
     color: #777;
     font-size: 0.85em;
-    a { color: #777; }
+    & a { color: #777; }
 }
