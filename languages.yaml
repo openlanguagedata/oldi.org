@@ -119,6 +119,16 @@ arb_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+arg_Latn:
+  display_name: Aragonese
+  eng_name: Aragonese
+  endonym: aragonés
+  iso_639_3: arg
+  iso_15924: Latn
+  glottocode: arag1245
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
 ars_Arab:
   display_name: Najdi Arabic
   eng_name: Najdi Arabic
@@ -165,6 +175,7 @@ asm_Beng:
 ast_Latn:
   display_name: Asturian
   eng_name: Asturian
+  endonym: asturianu
   iso_639_3: ast
   iso_15924: Latn
   glottocode: astu1245
@@ -257,8 +268,8 @@ bem_Latn:
 ben_Beng:
   display_name: Bengali
   eng_name:
-  - Bengali
   - Bangla
+  - Bengali
   endonym: বাংলা
   iso_639_3: ben
   iso_15924: Beng
@@ -266,6 +277,7 @@ ben_Beng:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+    seed: ok
 bho_Deva:
   display_name: Bhojpuri
   eng_name: Bhojpuri
@@ -356,6 +368,16 @@ cat_Latn:
   iso_639_3: cat
   iso_15924: Latn
   glottocode: stan1289
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+cat_Latn_vale1252:
+  display_name: Valencian
+  eng_name: Valencian
+  endonym: valencià
+  iso_639_3: cat
+  iso_15924: Latn
+  glottocode: vale1252
   datasets:
     flores_dev: ok
     flores_devtest: ok
@@ -822,6 +844,7 @@ ita_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+    seed: ok
 jav_Latn:
   display_name: Javanese
   eng_name: Javanese
@@ -839,6 +862,15 @@ jpn_Jpan:
   glottocode: nucl1643
   datasets:
     flores_dev: ok
+    flores_devtest: ok
+kaa_Latn:
+  display_name: Karakalpak
+  eng_name: Karakalpak
+  endonym: Qaraqalpaq
+  iso_639_3: kaa
+  iso_15924: Latn
+  glottocode: kara1467
+  datasets:
     flores_devtest: ok
 kab_Latn:
   display_name: Kabyle
@@ -1298,6 +1330,16 @@ mya_Mymr:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+myv_Cyrl:
+  display_name: Erzya
+  eng_name: Erzya
+  endonym: эрзянь кель
+  iso_639_3: myv
+  iso_15924: Cyrl
+  glottocode: erzy1239
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
 nld_Latn:
   display_name: Dutch
   eng_name: Dutch
@@ -1346,7 +1388,9 @@ nqo_Nkoo:
     seed: ok
 nso_Latn:
   display_name: Northern Sotho
-  eng_name: Northern Sotho
+  eng_name:
+  - Northern Sotho
+  - Sepedi
   iso_639_3: nso
   iso_15924: Latn
   glottocode: pedi1238
@@ -1378,6 +1422,16 @@ oci_Latn:
   iso_639_3: oci
   iso_15924: Latn
   glottocode: occi1239
+  datasets:
+    flores_dev: warn
+    flores_devtest: warn
+oci_Latn_aran1260:
+  display_name: Aranese
+  eng_name: Aranese
+  endonym: aranés
+  iso_639_3: oci
+  iso_15924: Latn
+  glottocode: aran1260
   datasets:
     flores_dev: ok
     flores_devtest: ok
@@ -1648,6 +1702,7 @@ spa_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+    seed: ok
 srd_Latn:
   display_name: Sardinian
   eng_name: Sardinian
@@ -1813,7 +1868,9 @@ tsn_Latn:
     flores_devtest: ok
 tso_Latn:
   display_name: Tsonga
-  eng_name: Tsonga
+  eng_name:
+  - Tsonga
+  - Xitsonga
   iso_639_3: tso
   iso_15924: Latn
   glottocode: tson1249
@@ -1862,6 +1919,16 @@ twi_Latn_asan1239:
   iso_639_3: twi
   iso_15924: Latn
   glottocode: asan1239
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+tyv_Cyrl:
+  display_name: Tuvan
+  eng_name: Tuvan
+  endonym: Тыва дыл
+  iso_639_3: tyv
+  iso_15924: Cyrl
+  glottocode: tuvi1240
   datasets:
     flores_dev: ok
     flores_devtest: ok
@@ -1929,6 +1996,19 @@ vie_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+vmw_Latn:
+  display_name: Emakhuwa (Central)
+  eng_name:
+  - Central Emakhuwa
+  - Central Makhuwa
+  - Central Makua
+  - Central Macua
+  iso_639_3: vmw
+  iso_15924: Latn
+  glottocode: cent2033
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
 war_Latn:
   display_name: Waray
   eng_name: Waray
@@ -1947,6 +2027,15 @@ wol_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+wuu_Hans:
+  display_name: Wu Chinese
+  eng_name: Wu
+  endonym: 吴语
+  iso_639_3: wuu
+  iso_15924: Hans
+  glottocode: suhu1238
+  datasets:
+    flores_dev: ok
 xho_Latn:
   display_name: Xhosa
   eng_name: Xhosa
@@ -2009,7 +2098,9 @@ zsm_Latn:
     flores_devtest: ok
 zul_Latn:
   display_name: Zulu
-  eng_name: Zulu
+  eng_name:
+  - Zulu
+  - isiZulu
   iso_639_3: zul
   iso_15924: Latn
   glottocode: zulu1248

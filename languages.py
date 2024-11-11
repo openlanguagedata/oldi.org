@@ -55,8 +55,9 @@ if __name__ == "__main__":
         rows = []
         for langdata in languages.values():
             row = {
-                "Code": f" `{langdata['iso_639_3']}_{langdata['iso_15924']}`",
-                "Variety": f" `{langdata['glottocode']}`",
+                "Code": f" `{langdata['iso_639_3']}`",
+                "Script": f" `{langdata['iso_15924']}`",
+                "Glottocode": f" `{langdata['glottocode']}`",
                 "Name": " " + langdata["display_name"],
                 "Notes": "",
             }
