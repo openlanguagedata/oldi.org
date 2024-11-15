@@ -410,6 +410,7 @@ chv_Cyrl:
   glottocode: chuv1255
   datasets:
     flores_dev: ok
+    flores_devtest: ok
 cjk_Latn:
   display_name: Chokwe
   eng_name: Chokwe
