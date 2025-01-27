@@ -477,6 +477,14 @@ dan_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+dar_Cyrl:
+  display_name: Dargwa
+  eng_name: Dargwa
+  iso_639_3: dar
+  iso_15924: Cyrl
+  glottocode: darg1241
+  datasets:
+    flores_dev: ok
 deu_Latn:
   display_name: German
   eng_name: German
