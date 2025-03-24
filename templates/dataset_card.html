@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block title %}Dataset card for {{ lang.display_name }} {% endblock %}
+
+{% block content %}
+    {% if orig_url %}
+    <div>The contents of this card can be edited <a href="{{ orig_url }}">in the source repository</a>.</div>
+    {% endif %}
+    <div>
+        {{ card_content | safe }}
+    </div>
+{% endblock %}

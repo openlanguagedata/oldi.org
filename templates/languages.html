@@ -16,7 +16,7 @@
 
 <table class="c l3 l4">
     <thead>
-        <tr><th>Code</th><th>Script</th><th>Glottocode</th><th>Language</th><th><a href="https://huggingface.co/datasets/openlanguagedata/flores_plus">FLORES+</a></th><th><a href="https://huggingface.co/datasets/openlanguagedata/oldi_seed">OLDI-Seed</a></th></tr>
+        <tr><th>Code</th><th>Script</th><th>Glottocode</th><th>Language</th><th><a href="https://huggingface.co/datasets/openlanguagedata/flores_plus">FLORES+</a></th><th><a href="https://huggingface.co/datasets/openlanguagedata/oldi_seed">OLDI-Seed</a></th><th>Data cards</th></tr>
     </thead>
     <tbody>
         {% for lang in languages -%}
@@ -42,6 +42,11 @@
                 {%- elif lang.datasets.seed == "partial" -%}
                 <img src="/partial.png" class="i" alt="partially available" title="partially available">
                 {%- endif -%}
+            </td>
+            <td>
+                {%- if lang.flores_card -%}<a href="{{ lang.flores_card }}">FLORES+</a>{%- endif -%}
+                {%- if lang.flores_card and lang.seed_card -%}, {%- endif -%}
+                {%- if lang.seed_card -%}<a href="{{ lang.seed_card }}">Seed</a>{%- endif -%}
             </td>
         </tr>
         {%- endfor %}
