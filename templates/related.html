@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+
+{% block title %}Related projects – Open Language Data Initiative{% endblock %}
+
+{% block content %}
+<h1>Related projects</h1>
+
+<p>
+    Currently, OLDI manages OLDI-Seed (an extension of the NLLB-Seed dataset) and FLORES+ (an extension of the FLORES-200 dataset).
+    Below, we list some other extensions and derivatives of these datasets, not managed by OLDI but still potentially relevant,
+    as well as some other interesting multiway parallel datasets.
+</p>
+
+<h2>Partial FLORES translations</h2>
+<p>
+    There are at least two translations of FLORES that comprise less than one full dataset split.
+    By representing languages for which no other translation benchmarks exists, they could still be interesting:
+</p>
+<ul>
+    <li><a href="https://huggingface.co/datasets/tartuNLP/smugri-flores-testset">smugri-flores-testset</a>: translation of the first 250 sentences of the FLORES devtest set
+        (all from the news domain) into low-resource Finno-Ugric languages: Komi, Udmurt, Hill and Meadow Mari, Erzya, Moksha, Livonian, Mansi, and Livvi Karelian
+        (<a href="https://openreview.net/forum?id=DX-XHq9_Pa">Yankovskaya et al, 2023</a>),
+        later expanded with Proper Karelian, Ludian, and Veps (<a href="https://openreview.net/forum?id=uTFJsQpNZk">Pashchenko et al, 2024</a>).
+    </li>
+    <li><a href="https://huggingface.co/datasets/alexantonov/chukot_russian_flores_sample">chukot_russian_flores_sample</a>: translation of the first 100 sentences of the FLORES devtest set
+        into the Chukot language via Russian.
+    </li>
+    <li><a href="https://huggingface.co/datasets/facebook/2M-Flores-ASL">2M-Flores-ASL</a>: a version of FLORES translated into American Sign Language.</li>
+</ul>
+
+<h2>Other FLORES derivatives</h2>
+<ul>
+    <li><a href="https://huggingface.co/datasets/google/fleurs">Fleurs</a> is a speech version of FLORES in 102 languages.</li>
+    <li><a href="https://huggingface.co/datasets/facebook/belebele">Belebele</a>: a benchmark of multilingual reading comprehension (spanning 122 language variants) with multiple-choice answers built on top of FLORES.</li>
+</ul>
+
+<h2>Other massively parallel datasets</h2>
+<ul>
+    <li><a href="https://huggingface.co/datasets/google/wmt24pp">WMT24++</a>: WMT24 test set translated from English to 55 languages. A potential alternative to FLORES.</li>
+    <li><a href="https://huggingface.co/datasets/google/smol">SMOL</a>: a collection of word, sentence, and document translations into low-resourced languages, for the purpose of training translation models. A potential alternative to the Seed dataset.</li>
+</ul>
+
+{% endblock %}
