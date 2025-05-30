@@ -1,3 +1,4 @@
+python == 3.11
 Jinja2==3.1.6
 markupsafe==2
 pyyaml==6
