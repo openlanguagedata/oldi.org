@@ -9,10 +9,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Utility to perform various tasks with languages.yaml"
     )
-    parser.add_argument("--yaml-path", type=Path, default=Path("./languages.yaml"))
-    subparsers = parser.add_subparsers(
-        dest="command", description="Valid sub-commands"
+    parser.add_argument(
+        "--yaml-path", type=Path, default=Path("./resources/languages.yaml")
     )
+    subparsers = parser.add_subparsers(dest="command", description="Valid sub-commands")
     parser_sort = subparsers.add_parser("sort", help="Sort the YAML file")
     parser_table = subparsers.add_parser("table", help="Print Markdown tables")
     parser_table.add_argument("dataset", choices="flores+ seed".split())
@@ -84,7 +84,10 @@ if __name__ == "__main__":
         markdown = (
             markdown_table(rows)
             .set_params(
-                quote=False, row_sep="markdown", padding_width=1, padding_weight="centerright"
+                quote=False,
+                row_sep="markdown",
+                padding_width=1,
+                padding_weight="centerright",
             )
             .get_markdown()
         )

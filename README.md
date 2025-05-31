@@ -7,9 +7,9 @@ This is the website <https://oldi.org>. We use the Jinja2 templates in `template
 The `build.py` script builds the website into the build directory `build/`. This is the directory that is served by our host (currently Cloudflare Pages). When a new commit is pushed to GitHub, the host will automatically run the build script and update the public-facing site based on what is in the build directory.
 
 The build process is straightforward:
-1. We load all language metadata from `languages.yaml`, and copy it to the build directory (so it can be accessed by the public).
+1. We load all language metadata from `resources/languages.yaml`, and copy it to the build directory (so it can be accessed by the public).
 2. We copy all static content in `static/` to the build directory.
-3. We compile all templates in `templates/` to the build directory.
+3. We compile the templates in `templates/` to the build directory.
 4. We feed all dataset cards in `dataset_cards/` into the `dataset_card.html` template and compile to the build directory (after any update, they need to be manually copypasted from the FLORES and Seed repositories).
 
 ### Local builds

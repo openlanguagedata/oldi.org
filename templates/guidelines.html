@@ -2,158 +2,60 @@
 
 {% block title %}Contribution Guidelines – Open Language Data Initiative{% endblock %}
 
-{% block content %}
+{% block content -%}
 <h1>Contribution Guidelines</h1>
 
-<p>Thank you for your interest in contributing to the OLDI datasets!</p>
-
-<p>To ensure high-quality contributions, please follow the steps in the <a href="#checklist">checklist</a> below and see the rest of this page for more information. Should you have any questions about the guidelines, please feel free to email the organisers at <a href="mailto:info@oldi.org">info@oldi.org</a> or <a href="https://discord.gg/jJmrw3E77u">join our Discord server</a>.</p>
-
-<h2 id="checklist">Language data release checklist</h2>
+<p>Thank you for your interest in contributing to the OLDI datasets! To make your contribution, please follow the steps below and see the rest of this page for more information.</p>
 
 <ul class="checklist">
-    <li><input type="checkbox"> Decide on your <a href="#contribution-type">type of contribution</a>.</li>
-    <li><input type="checkbox"> Contact the organisers, via <a href="mailto:info@oldi.org">email</a> or <a href="https://discord.gg/jJmrw3E77u">Discord</a>, to discuss your proposed contribution.</li>
-    <li><input type="checkbox"> Identify the right <a href="#language-codes">language code</a> for your contribution.</li>
-    <li><input type="checkbox"> Fill out a <a href="#dataset-card">dataset card</a> and ensure all people participating in data collection or annotation have acknowledged its contents.</li>
-    <li><input type="checkbox"> Ensure all translators have acknowledged the <a href="#translation-guidelines">translation guidelines</a></li>
-    <li><input type="checkbox"> Deliver the data and dataset card by submitting a pull request to the <a href="https://huggingface.co/openlanguagedata#datasets">appropriate repository</a> and accepting the <a href="https://developercertificate.org/">DCO</a>.</li>
+    <li><input type="checkbox"> Decide on your <strong>type of contribution</strong>, then contact the organisers to discuss.</li>
+    <li><input type="checkbox"> Identify the right <strong>language code</strong>.</li>
+    <li><input type="checkbox"> Fill out a <strong>dataset card</strong> and ensure it is acknowledged by all participants.</li>
+    <li><input type="checkbox"> Ensure all translators have acknowledged the <strong>translation guidelines</strong>.</li>
+    <li><input type="checkbox"> <strong>Deliver</strong> the data and dataset card!</li>
 </ul>
 
-<h2 id="contribution-type">Types of contribution</h2>
+<p>Questions? Email the organisers at <a href="mailto:info@oldi.org">info@oldi.org</a> or <a href="https://discord.gg/jJmrw3E77u">join our Discord server</a>.</p>
 
-<p>There are two main types of contributions:</p>
+<hr>
+
+<h2 id="types-of-contribution">Types of contribution</h2>
+
+<p>OLDI accepts two main types of contribution:</p>
 
 <ol>
     <li><strong>Fixes to existing data:</strong> in case of incorrect or incomplete exisiting translations.</li>
-    <li><strong>Completely new translations:</strong> typically involves starting from the original English data and having it translated by qualified, native speakers of the target language (see <a href="#translation-guidelines">translation guidelines</a>).</li>
+    <li><strong>Completely new translations:</strong> typically involves starting from the original English data and having it translated by qualified, native speakers of the target language.</li>
 </ol>
 
-<p>In each case, before starting work please make sure to email the organisers at <a href="mailto:info@oldi.org">info@oldi.org</a> or get in touch on <a href="https://discord.gg/jJmrw3E77u">Discord</a>. This ensures nobody else is already working on the same task and allows the community to better coordinate work.</p>
+<p>In either case, please get in touch with the organisers to discuss your contribution before starting work. This ensures nobody else is already working on the same task and allows the community to better coordinate work.</p>
 
 <h2 id="language-codes">Language codes</h2>
 
-<p>We use standardized language codes throughout OLDI. These are made up of three parts, separated by underscores:</p>
+<p>We use standardized language codes throughout OLDI, made up of three parts separated by underscores:</p>
 
 <ul>
-    <li><strong>A language subtag:</strong> we use <a href="https://iso639-3.sil.org/code_tables/639/data">ISO 639-3</a> language codes. Macrolanguage codes must not be used if a more specific code exists: e.g. please use <code>cmn</code>, <code>yue</code>, <code>wuu</code>, etc. rather than <code>zho</code>.</li>
-    <li><strong>A script subtag:</strong> we use <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924</a> script codes.</li>
-    <li><strong>A language variety subtag:</strong> to identify the specific language variety we use <a href="https://glottolog.org/glottolog/glottologinformation">Glottocodes</a>, which have the advantage of being stable and of allowing the identification of languages (or languoids) at various levels of granularity.</li>
+    <li><strong>A language subtag:</strong> an <a href="https://iso639-3.sil.org/code_tables/639/data">ISO 639-3</a> language code. Macrolanguage codes must not be used if a more specific code exists: e.g. please use <code>cmn</code>, <code>yue</code>, <code>wuu</code>, etc. rather than <code>zho</code>.</li>
+    <li><strong>A script subtag:</strong> an <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924</a> script code.</li>
+    <li><p><strong>A language variety subtag:</strong> a <a href="https://glottolog.org/glottolog/glottologinformation">Glottocode</a> identifying the specific language variety. These have the advantages of being stable and of allowing granular language identification.</p>
+    </li>
 </ul>
 
 <p><strong><img src="/example.svg" class="inline" alt=""> Example</strong>: <code>apc_Arab_sout3123</code> is South Levantine Arabic written in the Arabic script.</p>
 
 <h2 id="dataset-card">Dataset card</h2>
 
-<p>For new data, we collect precise information about the language variety, the quality assurance workflow and, where applicable, the translation workflow. Please use the following Markdown template to provide this information.</p>
-
-<h3>Template</h3>
-
-<div class="code box"><strong># Dataset card</strong>
-
-    <strong>## Description</strong>
-
-    <em>&lt;!-- A concise description of the data associated with this card. --&gt;</em>
-
-    FLORES+ dev set in Luxemburgish
-
-    <strong>## License</strong>
-
-    <em>&lt;!-- Contributions to existing datasets must be released under the same license as the parent dataset. For completely new contributions, we encourage the use of an open license. At a minimum, data should be made available for research use. Please specify the license using an <a href="https://spdx.org/licenses/">SPDX license identifier</a>. --&gt;</em>
-
-    CC-BY-SA-4.0
-
-    <strong>## Attribution</strong>
-
-    <em>&lt;!-- Who should be credited for creating this dataset? Feel free to include citation data in BibTeX format. --&gt;</em>
-
-    ```bibtex
-    @article{myarticle,
-    &nbsp;&nbsp;title={Something},
-    &nbsp;&nbsp;author={Somebody},
-    &nbsp;&nbsp;year={2024},
-    }
-    ```
-
-    <strong>## Language codes</strong>
-
-    <em>&lt;!--
-    * If this language is assigned an <a href="https://iso639-3.sil.org/code_tables/639/data">ISO 639-3</a> individual language code (not a macrolanguage code), specify it here.
-    * Please specify the script this language is written in using an <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924</a> code.
-    * If this language is assigned a <a href="https://glottolog.org/glottolog/glottologinformation">Glottocode</a>, please specify it here. --&gt;</em>
-
-    * ISO 639-3: ltz
-    * ISO 15924: Latn
-    * Glottocode: luxe1243
-
-    <strong>## Additional language information</strong>
-
-    <em>&lt;!-- Any relevant additional information on the language, such as:
-        * A list of reference publications and software (dictionaries, grammars, spellcheckers).
-        * If applicable, any additional information about dialectal variation that is not captured by the Glottocode.
-        * If relevant, the orthography used in your contribution. --&gt;</em>&nbsp;
-
-    <strong>## Workflow</strong>
-
-    <em>&lt;!-- What workflow was followed in creating this dataset? E.g., for a translated dataset, relevant information includes: what language the content was translated from, the number of translators, aggregate translator information (how many were native speakers in the target language, how many were highly proficient in the target languages, how many had professional translation experience), was any fraction of the data checked independently by third parties, etc. --&gt;</em>
-
-    Data was translated from English by 5 translators, all native speakers of the target language and highly proficient in English (at C2 level of the European Language Framework). All translators were either professional translators or had relevant qualifications (university degrees in Translation and Interpreting or Linguistics). 100% of the data was checked by one more independent translator.
-
-    <strong>## Additional guidelines</strong>
-
-    <em>&lt;!-- Were any additional guidelines agreed upon? Examples might include style guidelines, the use of particular grammatical forms or sentence structures, specific spelling or punctuation rules to be followed, etc. --&gt;</em>
-
-</div>
+<p>For new data, we collect precise information about the language variety, the quality assurance workflow and the translation workflow. We provide a <a href="{{ repo_url }}/resources/dataset-card-template.md">dataset card template</a> which should be filled out as fully as possible and submitted with the data.</p>
 
 <h2 id="translation-guidelines">Translation guidelines</h2>
 
-<p>These translation guidelines must be acknlowedged by all translators who will be contributing data.</p>
+<p>All translators who will be contributing data should acknowledge and abide by our <a href="/translation-guidelines.pdf">translation guidelines</a> (also available in <a href="{{ repo_url }}/resources/translation-guidelines.md">markdown format</a>). These ensure consistent and high-quality translations. In particular, please note that some machine translation services (including DeepL, Google Translate, ChatGPT, Gemini and Claude) prohibit the use of their output for training other translation or AI models, so their use is not permitted.</p>
 
-<h3>Important note</h3>
+<h2 id="delivery">Delivery</h2>
 
-<p>Your translations will be used to help train or evaluate machine translation engines. For this reason, this project requires <strong>human translation</strong>.</p>
+<p>The OLDI datasets are hosted on <a href="https://huggingface.co/openlanguagedata">HuggingFace</a>. To deliver your contribution, submit a pull request to the appropriate repository. Make sure to include both the data and the dataset card!</p>
 
-<ul>
-    <li>If you are translating data to be used for evaluation purposes, such as for FLORES+, using or even referencing machine translation output is not allowed (this includes post-editing).</li>
-    <li>If you are translating data to be used for training purposes, such as Seed, the use of post-edited machine translated content is allowed, provided all data is manually verified and edited where necessary. <strong><img class="inline" src="/caution.svg" alt="[Caution]"> Note</strong> that some machine translation services – including DeepL, Google Translate, and ChatGPT – prohibit the use of their output for training other translation or AI models, so their use is not permitted.</li>
-</ul>
+<p>By contributing to OLDI, you agree to the <a href="https://developercertificate.org">Developer Certificate of Origin (DCO)</a>. This document was created by the Linux Kernel community and is a simple statement that you, as a contributor, have the legal right to make the contribution. In order to show your agreement with the DCO, you should include the following line at the end of commit message (substituting your real name): <code>Signed-off-by: John Doe &lt;john.doe@example.com&gt;</code>. This can be done easily using the <code>-s</code> flag on the <code>git commit</code> command.</p>
 
-<h3>General guidelines</h3>
-
-<ol>
-    <li>You will be translating sentences coming from different sources. Please refer to the source document if available.</li>
-    <li>Do not convert any units of measurement. Translate them exactly as noted in the source content.</li>
-    <li>When translating, please maintain the same tone used in the source document. For example, encyclopedic content coming from sources like Wikipedia should be translated using a formal tone.</li>
-    <li>Provide fluent translations without deviating too much from the source structure. Only allow necessary changes.</li>
-    <li>Do not expand or replace information compared to what is present in the source documents. Do not add any explanatory or parenthetical information, definitions, etc.</li>
-    <li>Do not ignore any meaningful text that was present in the source.</li>
-    <li>In case of multiple possible translations, please pick the one that makes the most sense (e.g., for gender concordance, cultural fit in the target language, level of formality, etc.).</li>
-    <li>Translations must be faithful to the source in terms of pragmatics such as (if applicable) level of hedging/modality, sentiment and its intensity, negation, speech effects (disfluencies), etc.</li>
-    <li>For proper nouns and common abbreviations, please see the guidelines on Named Entities below.</li>
-    <li>Idiomatic expressions should not be translated word for word. Use an equivalent idiom, if one exists. If no equivalent idiom exists, use an idiom of similar meaning. If no similar expressions exist in the target language, paraphrase the idiom such that the meaning is retained in the target language.</li>
-    <li>When a pronoun to be translated is ambiguous (for instance, when it could be interpreted as either <em>him/her</em> or <em>he/she</em>), opt for gender neutral pronouns (such as <em>them/they</em>) if those exist in the target language. However, when a pronoun to be translated is clearly marked for gender, you should follow the source material and continue to mark for gender.</li>
-    <li>Foreign words and phrases used in the text should be kept in their original language when this is necessary to preserve the meaning of the sentence (e.g. if given as an example of a foreign word).</li>
-</ol>
-
-<h3>Named entities</h3>
-
-<p>Named entities are people, places, organisations, etc., that are commonly referred to using a proper noun. This section provides guidance on how to handle named entities. Please review the following guidelines carefully:</p>
-
-<ol>
-    <li>
-        If there is a commonly used term in the target language for the Named Entity:
-        <ol>
-            <li>If the most commonly used term is the same as in the source language, then keep it as it is.</li>
-            <li>If the most commonly used term is a translation or a transliteration, then use that.</li>
-        </ol>
-    </li>
-    <li>
-        If there is no commonly used term:
-        <ol>
-            <li>If possible, a transliteration of the original term should be used.</li>
-            <li>If a transliteration would not be commonly understood in the context, and the source term would be more acceptable, you may retain the original term.</li>
-        </ol>
-    </li>
-</ol>
-
-{% endblock %}
+<p>Congratulations! You are now an OLDI contributor!</p>
+{%- endblock %}
