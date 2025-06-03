@@ -89,7 +89,7 @@ p {
 }
 
 img.i { height: 2ex; vertical-align: middle; }
-img.inline { vertical-align: text-top; height: 2ex; }
+img.inline { vertical-align: baseline; height: 1.5ex; }
 
 a { color: var(--blue);  }
 a:hover { text-decoration: none; }
