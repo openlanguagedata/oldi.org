@@ -1,0 +1,104 @@
+{% extends "index.html" %}
+
+{% block title %}Getting Started – Open Language Data Initiative{% endblock %}
+
+{% block content -%}
+<h1>Getting Started</h1>
+
+<p>If you’ve found this page, chances are you care deeply about your language – especially if it’s one that doesn’t yet have strong digital tools, such as machine translation or speech recognition systems. Maybe you’re a speaker, researcher, teacher, or someone who simply wants to see your language thrive in an increasingly digital world.</p>
+
+<p>Whatever your background, welcome. This page will guide you through what the Open Language Data Initiative (OLDI) is about and how you can start contributing to the development of open datasets that support language technologies for underserved languages, while keeping the needs and values of your community front and center.</p>
+
+<h2>First Things First: You’re in Control</h2>
+
+<p>OLDI is not about collecting data for its own sake.</p>
+
+<p>Languages are more than data. They are central to identity, culture, and community life. That’s why OLDI places a strong emphasis on community agency and informed participation. We aim to make it easier for communities and researchers to build resources that reflect their linguistic realities – and to do so in ways that are open, collaborative, and respectful.</p>
+
+<div class="box">
+    <img src="/info.svg" class="inline" alt="NB:"> If you’re here to explore or to contribute, know that you’re not expected to “hand over” your data. You are welcome to follow our <a href="/guidelines.html">guidelines</a> to create resources for your own community, for your own use. If you choose to share them more broadly through OLDI, you’ll be joining an effort to build open, multilingual tools that benefit many communities at once. Either choice is entirely valid.
+</div>
+
+<h2>What We Work On</h2>
+
+<p>OLDI currently supports datasets for two key language technologies: machine translation (MT) and automatic speech recognition (ASR). These technologies typically require two kinds of data: small, high-quality benchmark datasets to evaluate system performance, and larger datasets to train models.</p>
+
+<p>What sets OLDI’s approach apart is our focus on <strong>open, multilingual, massively parallel datasets</strong> – collections built on shared source material across many languages, so that new contributions are automatically aligned with all others. This structure encourages broad interoperability, simplifies quality control, and allows contributors to consult existing translations in other languages they may know.</p>
+
+<p>It’s important to understand that OLDI does not build translation or speech systems itself. We coordinate and maintain datasets that others – often researchers, developers and community members themselves – can use for training and evaluation. While there is no guarantee that contributing to these datasets will lead directly to the development of language tools, these datasets are often the <strong>first essential step</strong> in making that possible.</p>
+
+<h2>Technologies We Support</h2>
+
+<h3>Machine Translation (MT)</h3>
+
+<p>If your goal is to help your language be translated automatically (e.g., using online translation tools), you’ll want to start with machine translation datasets. These fall into two categories:</p>
+<ul>
+    <li>
+        <p><strong>Benchmark datasets</strong>, also called evaluation datasets. These should be your first priority. Without a benchmark, it’s not possible to meaningfully evaluate translation quality.</p>
+        <ul>
+            <li><a href="https://huggingface.co/datasets/openlanguagedata/flores_plus">FLORES+</a>. A good first choice for new contributors: small, high-quality, and widely supported.</li>
+            <li><a href="https://huggingface.co/datasets/google/wmt24pp">WMT24++</a>. A larger benchmark useful for languages that already have some MT support and are in need of more thorough evaluation.</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>Training datasets.</strong> Once a benchmark is in place, it makes sense to start contributing training data.</p>
+        <ul>
+        <li><a href="https://huggingface.co/datasets/openlanguagedata/oldi_seed">OLDI-Seed</a>. This is our original training dataset, focussed on Wikipedia-style encyclopedic content.</li>
+        <li><a href="https://huggingface.co/datasets/google/smol">SMOL</a>. A more general-purpose dataset which covers a broader range of topics and registers.</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Speech Technologies</h3>
+
+<p>We also support datasets for speech recognition (ASR) and speech translation. These are technologies that allow computers to understand or translate spoken language.</p>
+
+<ul>
+    <li>
+        <p><strong>Benchmark datasets</strong>.</p>
+        <ul>
+            <li><a href="https://huggingface.co/datasets/google/fleurs">FLEURS</a>. A multilingual benchmark for speech recognition, which has also been used for speech translation.</li>
+        </ul>
+    </li>
+    <li>
+        <p><strong>Training datasets</strong>. OLDI does not currently coordinate training data for speech technologies. However, if you are interested in collecting speech recordings in your language, we recommend contributing to the <a href="https://commonvoice.mozilla.org/">Mozilla Common Voice</a> project.</p>
+    </li>
+</ul>
+
+<div class="box">
+    <img src="/info.svg" class="inline" alt="NB:"> The FLORES+ and OLDI-Seed datasets are managed directly by the OLDI team. Other datasets mentioned above are managed by external organisations. We’re still happy to guide anyone interested in contributing to them, and submissions based on those datasets are generally welcome at our workshops.
+</div>
+
+
+<h2>What to Do Next</h2>
+
+<ol>
+  <li> Visit the <a href="/languages.html">Languages</a> page to check whether your language is already listed.</li>
+  <li> Read the <a href="/guidelines.html">Guidelines</a> to understand the datasets and how to contribute to them.</li>
+  <li> Choose the dataset that’s right for your goals and context, and begin working on it.</li>
+  <li> Share your data or use the materials locally, on your terms.</li>
+</ol>
+
+<h2>What Are the Benefits of Participating?</h2>
+
+<p>Even though contributing doesn’t guarantee the creation of language tools, there are important advantages:</p>
+
+<ul>
+  <li>You work within established, open, and carefully structured datasets built by a global community.</li>
+  <li>You can benefit from seeing how others have translated the same content, often in languages you know.</li>
+  <li>Your work can be reviewed or reused by others, helping improve quality over time.</li>
+  <li>You become part of a community of researchers, developers, and language advocates with similar goals.</li>
+</ul>
+
+<h2>Our Values & Positionality</h2>
+
+<p>We acknowledge that data expansion and availability is a small piece of the giant puzzle of language equity in NLP research. As part of our commitment to responsible science, we stress the importance of adopting a <strong>community-centric</strong> approach to NLP, where the involvement, wellbeing, and interests of speakers are elevated.</p>
+
+<p>First, we believe that the language corpora of any given language <strong>belong to the people who speak the language</strong>. Particularly for endangered languages, where the speaker population might be small, language data compilation by outside groups without calibrating the interest of native speakers could be viewed as a form of exploitation. As such, whenever possible, we advocate for data contributors to carefully deliberate over their methodological choices, document ethical decisions, and potentially devise deployment strategies that amplify underserved communities’ ability to directly benefit from technologies built using their language data.</p>
+
+<p>Related to the concept of community-centeredness, we also advocate for data contribution that captures the <strong>sociolinguistic diversity</strong> of how languages are used across place and setting. More specifically, instead of relying on frameworks that have conventionally worked for high-resource languages, we encourage contributions reflecting how languages are used in real, situated contexts (e.g., data that includes regional variants, dialects, colloquialisms, code-mixing, etc.).</p>
+
+<p>We also believe that <strong>interdisciplinarity</strong>, where humanities and social science researchers work together with technical practitioners, can give rise to more ethically- and socially-aligned forms of data collection and NLP development. For instance, sociologists and anthropologists have long grappled with the epistemological implications of power and sociohistorical dynamics in the context of research, and having their perspectives on how to use participatory methods could be imperative for sustainable language data collection in NLP.</p>
+
+<p>Finally, we want to acknowledge our researcher positionality. While some of the organizers speak under-served languages, most of us are trained in Western institutions and are/were affiliated with major universities or AI research labs in the US and the UK. Occupying such positions may skew our stances on issues pertaining to language accessibility and NLP development, and we note that those who do not share our milieus may adopt different levels of criticality than ours.</p>
+{%- endblock %}
