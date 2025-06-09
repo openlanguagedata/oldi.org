@@ -190,3 +190,8 @@ footer {
     font-size: 0.85em;
     & a { color: #777; }
 }
+
+pre {
+    overflow-x: auto;
+    white-space: pre;
+}

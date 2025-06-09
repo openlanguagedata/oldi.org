@@ -59,7 +59,6 @@ md_renderer = mistune.create_markdown(
     ],
 )
 
-
 # A function to convert GFM-style admonitions since our renderer doesn't support them.
 # We stick to the GFM syntax since we're hosting our markdown files on GitHub.
 def convert_gfm_admonitions(md):
@@ -99,7 +98,7 @@ for template_name in "guidelines index languages related values".split():
         )
 
 # Compile the dataset cards
-template_path = TEMPLATE_ROOT / "dataset_card.html"
+template = env.get_template("dataset_card.html")
 for data_name, lang2cards in data2langs2cards.items():
     cards_tgt_dir = tgt_dir / "cards" / data_name
     cards_tgt_dir.mkdir(parents=True, exist_ok=True)

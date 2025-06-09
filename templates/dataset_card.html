@@ -3,8 +3,9 @@
 {% block title %}Dataset card for {{ lang.display_name }} {% endblock %}
 
 {% block content %}
+    <hr>
     {% if orig_url %}
-    <div>The contents of this card can be edited <a href="{{ orig_url }}">in the source repository</a>.</div>
+    <div class="box">The contents of this card can be edited <a href="{{ orig_url }}">in the source repository</a>.</div>
     {% endif %}
     <div>
         {{ card_content | safe }}
