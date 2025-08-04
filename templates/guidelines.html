@@ -10,10 +10,10 @@
 <p>To make your contribution, please follow the steps below and see the rest of this page for more information.</p>
 
 <ul class="checklist">
-    <li><input type="checkbox"> Decide on your <strong>type of contribution</strong>, then contact the organisers to discuss.</li>
+    <li><input type="checkbox"> Decide on your <strong>type of contribution</strong>, then contact the organisers to discuss. For corpora that are externally managed, such as SMOL and WMT24++, please make sure to coordinate with the authors too.</li>
     <li><input type="checkbox"> Identify the right <strong>language code</strong>.</li>
     <li><input type="checkbox"> Fill out a <strong>dataset card</strong> and ensure it is acknowledged by all participants.</li>
-    <li><input type="checkbox"> Ensure all translators have acknowledged the <strong>translation guidelines</strong>.</li>
+    <li><input type="checkbox"> For corpora managed by OLDI, ensure all translators have acknowledged our <strong>translation guidelines</strong>.</li>
     <li><input type="checkbox"> <strong>Deliver</strong> the data and dataset card!</li>
 </ul>
 
@@ -31,6 +31,8 @@
 </ol>
 
 <p>In either case, please get in touch with the organisers to discuss your contribution before starting work. This ensures nobody else is already working on the same task and allows the community to better coordinate work.</p>
+
+<p>Some datasets, such as SMOL and WMT24++, are managed externally from OLDI. If your contribution is to an externally managed dataset, please ensure you coordinate with its original authors to ensure work is not being duplicated and any project-specific workflows and guidelines are being followed.</p>
 
 <h2 id="language-codes">Language codes</h2>
 
@@ -51,13 +53,15 @@
 
 <h2 id="translation-guidelines">Translation guidelines</h2>
 
-<p>All translators who will be contributing data should acknowledge and abide by our <a href="/translation-guidelines.pdf">translation guidelines</a> (also available in <a href="{{ repo_url }}/resources/translation-guidelines.md">markdown format</a>). These ensure consistent and high-quality translations. In particular, please note that some machine translation services (including DeepL, Google Translate, ChatGPT, Gemini and Claude) prohibit the use of their output for training other translation or AI models, so their use is not permitted.</p>
+<p>All translators who will be contributing data to translation datasets managed by OLDI should acknowledge and abide by our <a href="/translation-guidelines.pdf">translation guidelines</a> (also available in <a href="{{ repo_url }}/resources/translation-guidelines.md">markdown format</a>). These ensure consistent and high-quality translations. In particular, please note that some machine translation services (including DeepL, Google Translate, ChatGPT, Gemini and Claude) prohibit the use of their output for training other translation or AI models, so their use is not permitted.</p>
 
 <h2 id="delivery">Delivery</h2>
 
 <p>The OLDI datasets are hosted on <a href="https://huggingface.co/openlanguagedata">HuggingFace</a>. To deliver your contribution, submit a pull request to the appropriate repository. Make sure to include both the data and the dataset card!</p>
 
 <p>By contributing to OLDI, you agree to the <a href="https://developercertificate.org">Developer Certificate of Origin (DCO)</a>. This document was created by the Linux Kernel community and is a simple statement that you, as a contributor, have the legal right to make the contribution. In order to show your agreement with the DCO, you should include the following line at the end of commit message (substituting your real name): <code>Signed-off-by: John Doe &lt;john.doe@example.com&gt;</code>. This can be done easily using the <code>-s</code> flag on the <code>git commit</code> command.</p>
+
+<p>The delivery of contributions to datasets not managed by OLDI – such as SMOL and WMT24++ – should be discussed with the respective dataset authors.</p>
 
 <p>Congratulations! You are now an OLDI contributor!</p>
 {%- endblock %}
