@@ -884,6 +884,7 @@ kaa_Latn:
 kab_Latn:
   display_name: Kabyle
   eng_name: Kabyle
+  endonym: Taqbaylit
   iso_639_3: kab
   iso_15924: Latn
   glottocode: kaby1243
