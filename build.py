@@ -82,7 +82,7 @@ with open(RESOURCES_ROOT / "translation-guidelines.md") as f:
 
 # Compile the main templates
 env = Environment(loader=PackageLoader("build"), autoescape=select_autoescape())
-for template_name in "guidelines index languages related getting-started".split():
+for template_name in "guidelines index languages related getting-started papers".split():
     template_path = Path(f"./{template_name}.html")
     tgt_dir = BUILD_ROOT / template_path.parent
     tgt_dir.mkdir(parents=True, exist_ok=True)
