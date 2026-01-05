@@ -1994,9 +1994,11 @@ vec_Latn:
   iso_15924: Latn
   glottocode: vene1259
   datasets:
-    flores_dev: ok
-    flores_devtest: ok
-    seed: ok
+    flores_dev: warn
+    flores_devtest: warn
+    seed: warn
+  issues:
+  - https://huggingface.co/datasets/openlanguagedata/flores_plus/discussions/31
 vie_Latn:
   display_name: Vietnamese
   eng_name: Vietnamese
