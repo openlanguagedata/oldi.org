@@ -9,7 +9,7 @@ These translation guidelines must be acknlowedged by all translators who will be
 
 Your translations will be used to help train or evaluate machine translation engines. For this reason, this project requires **human translation**.
 
-* If you are translating data to be used for evaluation purposes (e.g. FLORES+), using or even referencing machine translation output is usually not allowed (this includes post-editing). In exceptional circumstances, use of CAT (computer-assisted translation) tools may be admissible. This is decided on a case by case basis: please contact the organisers to discuss.
+* If you are translating data to be used for evaluation purposes (e.g. FLORES+), using or even referencing machine translation output is usually not allowed (this includes post-editing). In exceptional circumstances, use of CAT (computer-assisted translation) tools and translation frameworks such as Apertium may be admissible. This is decided on a case by case basis: please contact the organisers to discuss.
 * If you are translating data to be used for training purposes, such as Seed, the use of post-edited machine translated content is allowed, provided all data is manually verified and edited where necessary.
 
 > ![CAUTION]
