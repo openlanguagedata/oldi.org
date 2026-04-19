@@ -31,7 +31,7 @@
 
 <h3>Machine Translation (MT)</h3>
 
-<p>If your goal is to help your language be translated automatically (e.g., using online translation tools), you’ll want to start with machine translation datasets. These fall into two categories:</p>
+<p>If your goal is to help your language be translated automatically (e.g., using online translation tools), you’ll want to start with machine translation datasets. These fall into three categories:</p>
 <ul>
     <li>
         <p><strong>Benchmark datasets</strong>, also called evaluation datasets. These should be your first priority. Without a benchmark, it’s not possible to meaningfully evaluate translation quality.</p>
@@ -46,6 +46,25 @@
             <li><a href="https://huggingface.co/datasets/openlanguagedata/oldi_seed">OLDI-Seed</a>. This is our original training dataset, focussed on Wikipedia-style encyclopedic content.</li>
             <li><a href="https://huggingface.co/datasets/google/smol">SMOL</a>. A newer dataset with a broader domain focus which covers a broader range of topics and registers. <img src="/info.svg" class="inline" alt="NB:"> As this dataset is externally managed, please ensure you coordinate with its authors before contributing changes.</li>
         </ul>
+    </li>
+    <li>
+        <p><strong>Quality estimation datasets.</strong> Models for translation quality estimation are useful for training MT models (e.g. for filtering training data)
+            and evaluating them (better understanding how well a model translates a benchmark). 
+            To develop them, one needs data on human judgements of translation quality.
+        </p>
+        <p>Such datasets do not have to be multiway parallel (because translation quality problems are language-specific anyway),
+            but it is advisable to use some of the existing protocols for their annotation, so that your dataset is compatible with others.
+        </p>
+        <p>As a source of inspiration, we suggest exploring such datasets as:
+        </p>
+        <ul>
+            <li><a href="https://github.com/hannliu/SiniticMTError/">SiniticMTError</a>:translation into 4 Cinitic languages, annotated with MQM.</li>
+            <li><a href="https://github.com/AI4Bharat/IndicMT-Eval/">IndicMT-Eval</a>: translation into 5 Indic languages, annotated with MQM.</li>
+            <li><a href="https://huggingface.co/datasets/masakhane/AfriMTE-WMT2024">AfriMTE</a>: 13 translation directions with African languages, annotated with DA+SQM. </li>
+            <li><a href="https://huggingface.co/datasets/facebook/bouquet">Met-BOUQuET</a>: 159 diverse translation directions annotated with XSTS+R+P. </li>
+        </ul>
+        <p>To organize the annotation, you could adopt or get inspred by some existing tool, such as <a href="https://github.com/zouharvi/pearmut">Pearmut</a>.
+        </p>
     </li>
 </ul>
 

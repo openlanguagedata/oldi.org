@@ -985,6 +985,15 @@ khk_Cyrl:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+khk_Mong:
+  display_name: Halh Mongolian (traditional Mongolian script)
+  eng_name: Halh Mongolian
+  iso_639_3: khk
+  iso_15924: Mong
+  glottocode: halh1238
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
 khm_Khmr:
   display_name: Khmer (Central)
   eng_name: Central Khmer
@@ -1020,6 +1029,15 @@ kir_Cyrl:
   iso_639_3: kir
   iso_15924: Cyrl
   glottocode: kirg1245
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+kjh_Cyrl:
+  display_name: Khakas
+  eng_name: Khakas
+  iso_639_3: kjh
+  iso_15924: Cyrl
+  glottocode: khak1248
   datasets:
     flores_dev: ok
     flores_devtest: ok
@@ -1125,6 +1143,24 @@ lit_Latn:
   iso_639_3: lit
   iso_15924: Latn
   glottocode: lith1251
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+lld_Latn:
+  display_name: Ladin (Val Badia)
+  eng_name: Ladin (Val Badia)
+  iso_639_3: lld
+  iso_15924: Latn
+  glottocode: ladi1250
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+lld_Latn_gard1241:
+  display_name: Ladin (Gherdëina)
+  eng_name: Ladin (Gherdëina)
+  iso_639_3: lld
+  iso_15924: Latn
+  glottocode: gard1241
   datasets:
     flores_dev: ok
     flores_devtest: ok
@@ -1238,6 +1274,15 @@ mar_Deva:
   iso_639_3: mar
   iso_15924: Deva
   glottocode: mara1378
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+mfe_Latn:
+  display_name: Mauritian Creole
+  eng_name: Mauritian Creole
+  iso_639_3: mfe
+  iso_15924: Latn
+  glottocode: mori1278
   datasets:
     flores_dev: ok
     flores_devtest: ok
@@ -1370,6 +1415,15 @@ nno_Latn:
     flores_devtest: ok
 nob_Latn:
   display_name: Norwegian Bokmål
+  eng_name: Norwegian Bokmål
+  iso_639_3: nob
+  iso_15924: Latn
+  glottocode: norw1259
+  datasets:
+    flores_dev: ok
+    flores_devtest: ok
+nob_Latn_radical:
+  display_name: Norwegian Bokmål, radical variety
   eng_name: Norwegian Bokmål
   iso_639_3: nob
   iso_15924: Latn
@@ -1987,6 +2041,14 @@ uzn_Latn:
   datasets:
     flores_dev: ok
     flores_devtest: ok
+uzs_Arab:
+  display_name: Southern Uzbek
+  eng_name: Southern Uzbek
+  iso_639_3: uzs
+  iso_15924: Arab
+  glottocode: sout2699
+  datasets:
+    flores_dev: ok
 vec_Latn:
   display_name: Venetian
   eng_name: Venetian
